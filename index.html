@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css"/>
+    <title>Wade contractors</title>
+  </head>
+  <body>
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-base">
+    <div class="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html"><img class="h-16 w-auto" src="public/darkLogo.png" alt="Wade contractors"/>
+          </a>
+        </div>
+        <!-- Desktop menu-->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-white font-semibold hover:text-gray transition">Home</a>
+          <a href="#" class="text-white font-semibold hover:text-gray transition">About us</a>
+          <a href="#" class="text-white font-semibold hover:text-gray transition">Services</a>
+          <a href="#" class="text-white font-semibold hover:text-gray transition">Equipment Hire</a>
+          <a href="#" class="text-white font-semibold hover:text-gray transition">Contact</a>
+        </div>
+        <!-- Desktop Phone-->
+        <a href="tel:02041859763">
+        <div class="hidden md:block text-white font-semibold flex">
+          <p>(+64) 02041859763
+          </p>
+        </div>
+        </a>
+        <!--Mobile Menu-->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <!--Hamburger-->
+            <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- Close-->
+            <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class=" hidden h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu-->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 border-t border-gray-200">
+      <div class="flex flex-col space-y-2 p-4 bg-base">
+        <a href="#" class="text-white font-semibold hover:text-gray transition">Home</a>
+        <a href="#" class="text-white font-semibold hover:text-gray transition">About us</a>
+        <a href="#" class="text-white font-semibold hover:text-gray transition">Services</a>
+        <a href="#" class="text-white font-semibold hover:text-gray transition">Equipment Hire</a>
+        <a href="#" class="text-white font-semibold hover:text-gray transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!--Hero image slideshow-->
+  <div class="relative w-full h-[500px] overflow-hidden">
+    <!--Slides-->
+    <div id="slides" class="relative w-full h-full">
+
+      <!--Slide 1-->
+      <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+        <img src="public/culvert.png" class="w-full h-full object-cover" alt="Slide 1">
+        <!-- Overlay Text -->
+        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white p-4">
+          <h2 class="text-3xl font-bold mb-2">Welcome to Our Site</h2>
+          <p class="text-lg">We create amazing experiences.</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+        <img src="public/digger.png" class="w-full h-full object-cover" alt="Slide 2">
+        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white p-4">
+          <h2 class="text-3xl font-bold mb-2">Our Services</h2>
+          <p class="text-lg">Innovative solutions for your business.</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+        <img src="public/truck.png" class="w-full h-full object-cover" alt="Slide 3">
+        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white p-4">
+          <h2 class="text-3xl font-bold mb-2">Contact Us</h2>
+          <p class="text-lg">Let’s work together!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Floating contact us-->
+  <button id="contact-btn" class=" fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-4 rounded-full shadow-lg hover:bg-blue-700 transition">
+    Contact Us
+  </button>
+  <!--Contact form popout-->
+  <div id="contact-overlay" class="hidden fixed inset-0 bg-black/50 z-50 flex justify-end">
+    <!-- Popout Panel-->
+    <div id="contact-panel" class="w-100 bg-white h-full p-6 shadow-lg flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out">
+      <!-- Header-->
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-semibold text-gray-800"> Contact Us</h2>
+        <button id="close-contact" class="text-gray-500 hover:text-gray-700 text-2xl leading-none">&times;</button>
+      </div>
+      <!--Form-->
+      <form class="space-y-4">
+        <!--Name-->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Name
+          <input type="text" class="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Your Name">
+          </label>
+        </div>
+        <!--Phone/Email-->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Phone / Email
+            <input type="text" class="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Your Contact">
+          </label>
+        </div>
+        <!--Subject-->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Subject
+            <input type="text" class="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Services, Hires...">
+          </label>
+        </div>
+        <!--Address-->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Address
+            <textarea class="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500" rows="2" placeholder="Your Address"></textarea>
+          </label>
+        </div>
+        <!--Submit-->
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
+          Submit
+        </button>
+
+      </form>
+    </div>
+  </div>
+  <div class="mt-20 space-y-10 p-8">
+      <p class="text-gray-700 "> Scroll down</p>
+      <div class="h-[1500px] bg-gradient-to-b from-gray-100 to-gray-300">
+      </div>
+  </div>
+  <script src="src/home.js"></script>
+  </body>
+</html>
