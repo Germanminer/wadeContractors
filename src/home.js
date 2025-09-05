@@ -54,15 +54,36 @@ let currentIndex = 0;
 function updateSlide() {
     slides.forEach((slide,i) => {
         const img = slide.querySelector('img');
-        const text= slide.querySelector('p');
-
-        slide.classList.toggle('opacity-100',i===currentIndex);
-        slide.classList.toggle('opacity-0',i!==currentIndex);
+        const text= slide.querySelector('.slide-text');
+        if(i=== currentIndex){
+            slide.classList.add('opacity-100')
+            slide.classList.remove('opacity-0');
+            //Zoom
+            img.classList.remove('zoom-slow')
+            void img.offsetWidth
+            img.classList.add('zoom-slow')
+            //Text
+            text.classList.remove('fade-out-down');
+            void text.offsetWidth
+            setTimeout(()=>{
+                text.classList.add('fade-in-up');
+            },300)
+        }else{
+            //Text out
+            text.classList.remove('fade-in-up')
+            void text.offsetWidth
+            text.classList.add('fade-out-down')
+            text.addEventListener('animationend', ()=>{
+                text.classList.remove('fade-out-down');
+            },{once:true})
+            slide.classList.add('opacity-0')
+            slide.classList.remove('opacity-100')
+        }
     })
 }
 function nextSlide() {
     currentIndex = (currentIndex+1) % slideCount;
     updateSlide();
 }
-let slideTimer = setInterval(nextSlide, 4000);
+setInterval(nextSlide, 4000);
 updateSlide();

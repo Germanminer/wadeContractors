@@ -33,7 +33,7 @@
         </a>
         <!--Mobile Menu-->
         <div class="md:hidden">
-          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <button id="menu-btn" class="text-white focus:outline-none">
             <!--Hamburger-->
             <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -59,8 +59,10 @@
       </div>
     </div>
   </nav>
+  <!--NavbarSpacer-->
+  <div class="h-16 w-full"></div>
   <!--Hero image slideshow-->
-  <div class="relative w-full h-[500px] overflow-hidden">
+  <div class="relative w-full h-[500px] md:h-[700px] overflow-hidden">
     <!--Slides-->
     <div id="slides" class="relative w-full h-full">
 
@@ -68,15 +70,16 @@
       <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
         <img src="public/culvert.png" class="w-full h-full object-cover" alt="Slide 1">
         <!-- Overlay Text -->
-        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white p-4">
+        <div class="slide-text absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center text-white p-4">
           <h2 class="text-3xl font-bold mb-2">Welcome to Our Site</h2>
           <p class="text-lg">We create amazing experiences.</p>
         </div>
       </div>
       <!-- Slide 2 -->
       <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-        <img src="public/digger.png" class="w-full h-full object-cover" alt="Slide 2">
-        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white p-4">
+        <img src="public/tractor+trailer.jpg" class="w-full h-full object-cover" alt="Slide 2">
+        <!-- Overlay Text -->
+        <div class="slide-text absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center text-white p-4">
           <h2 class="text-3xl font-bold mb-2">Our Services</h2>
           <p class="text-lg">Innovative solutions for your business.</p>
         </div>
@@ -84,18 +87,14 @@
       <!-- Slide 3 -->
       <div class="absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
         <img src="public/truck.png" class="w-full h-full object-cover" alt="Slide 3">
-        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white p-4">
+        <!-- Overlay Text -->
+        <div class="slide-text absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center text-white p-4">
           <h2 class="text-3xl font-bold mb-2">Contact Us</h2>
           <p class="text-lg">Let’s work together!</p>
         </div>
       </div>
     </div>
   </div>
-
-
-
-
-
   <!-- Floating contact us-->
   <button id="contact-btn" class=" fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-4 rounded-full shadow-lg hover:bg-blue-700 transition">
     Contact Us
