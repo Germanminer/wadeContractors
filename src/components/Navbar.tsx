@@ -7,22 +7,29 @@ export default function Navbar() {
             <nav id="navbar" className="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-base">
                 <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
-                        {/*Logo*/}
-                        <div className="flex-shrink-0">
-                            <Link to="/"><img className="h-16 w-auto" src="/darkLogo.png"
-                                                      alt="Wade contractors"/>
+                        {/*Logo and Location*/}
+
+                        <div className="flex items-center space-x-3">
+                            <Link to="/" className="flex-shrink-0">
+                                <img className="h-16 w-auto " src="/darkLogo.png" alt="Wade contractors"/>
                             </Link>
+                            <div className="flex items-center space-x-3">
+                                <img className="h-7 w-auto " src="/mapPin.svg" alt="Map icon"/>
+                                <h2 className="text-white font-semibold text-xl">
+                                    Waikato
+                                </h2>
+                            </div>
                         </div>
                         {/*Desktop menu*/}
                         <div className="hidden md:flex space-x-6">
-                            <Link to="/" className="text-white font-semibold hover:text-gray transition">Home</Link>
+                        <Link to="/" className="text-white font-semibold hover:text-gray transition">Home</Link>
                             <Link to="/about" className="text-white font-semibold hover:text-gray transition">About us</Link>
                             <Link to="/services" className="text-white font-semibold hover:text-gray transition">Services</Link>
                             <Link to="/hire" className="text-white font-semibold hover:text-gray transition">Equipment Hire</Link>
                         </div>
                         {/*Desktop Phone*/}
                         <a href="tel:02041859763">
-                            <div className="hidden md:block text-white font-semibold">
+                            <div className="block text-white font-semibold">
                                 <p>Call us! 02041859763
                                 </p>
                             </div>

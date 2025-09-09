@@ -1,8 +1,8 @@
 import {useEffect,useState} from "react";
 const slides = [
-    {src:"/culvert.png",title:"Culvert",text:"we create amazing experiences"},
-    {src:"/tractor+trailer.jpg",title:"tractor",text:"we create amazing experiences"},
-    {src:"/truck.png",title:"truck",text:"we create amazing experiences"},
+    {src:"/culvert.png",title:"Culvert",text:""},
+    {src:"/tractor+trailer.jpg",title:"Tractor",text:""},
+    {src:"/truck.png",title:"Track and Race Repairs",text:""},
 ]
 export default function HeroSlideshow() {
     const [index, setIndex] = useState(0);
@@ -34,7 +34,7 @@ export default function HeroSlideshow() {
 
         const timer = setInterval(() => {
             setIndex((prev) => (prev + 1) % slides.length);
-        }, 4000);
+        }, 2500);
         return () => clearInterval(timer);
 
     }, [index]);
@@ -68,7 +68,7 @@ export default function HeroSlideshow() {
                                     showText&&isActive ? "fade-in-up" : "fade-out-down"
                                 }`}
                             >
-                                <h2 className="text-3xl font-bold mb-2">{slide.title}</h2>
+                                <h2 className="text-6xl font-bold mb-2 text-shadow-lg">{slide.title}</h2>
                                 <p className="text-lg">{slide.text}</p>
                             </div>
                         </div>
