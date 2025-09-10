@@ -41,7 +41,7 @@ function Home() {
                 </div>
                 <Slideshow/>
             </div>
-            <div className="max-w-4xl mx-auto p-4">
+            <div className="max-w-6xl mx-auto p-4 mb-15">
                 <div className="text-center mb-4">
                     <h3 className="text-xl font-bold mb-2">
                         Feature Videos
@@ -50,6 +50,14 @@ function Home() {
                         You will find more videos on our services pages, if there's anything you need more information on just give us a call or fill out the contact form in the bottom right.
                     </h4>
 
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <video controls className="w-full shadow-lg">
+                        <source src="/videos/graterBlade.mp4" type="video/mp4"/>
+                    </video>
+                    <video controls className="w-full shadow-lg">
+                        <source src="/videos/graterBlade2.mp4" type="video/mp4"/>
+                    </video>
                 </div>
             </div>
             <Footer/>

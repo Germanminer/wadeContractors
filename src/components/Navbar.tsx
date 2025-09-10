@@ -32,9 +32,9 @@ export default function Navbar() {
                                 Hire</Link>
                         </div>
                         {/*Desktop Phone*/}
-                        <a className="hidden sm:flex" href="tel:02041859763">
+                        <a className="hidden sm:flex" href="tel:0277250250">
                             <div className="block text-white font-semibold">
-                                <p>Call us 02041859763
+                                <p>Call us 0277 250 250
                                 </p>
                             </div>
                         </a>

@@ -80,10 +80,10 @@ export default function ContactForm() {
                             Submit
                         </button>
                     </form>
-                    <a href="tel:02041859763">
+                    <a href="tel:0277250250">
                         <div className="font-semibold text-2xl flex items-center ">
                             <img className="w-16 h-16 pr-5" src="/phone.svg" alt="phone icon"/>
-                            <p>Call us 02041859763
+                            <p>Call us 0277 250 250
                             </p>
                         </div>
                     </a>

@@ -20,16 +20,15 @@ export default function Footer() {
                     {/* Contact */}
                     <div className="flex flex-col items-center md:items-end gap-2">
                         <a href="tel:0277250250"
-                           className="text-lg font-medium underline hover:text-yellow-500 transition-colors">
-                            Call now: 0277 250 250
+                           className="text-lg font-medium hover:text-yellow-500 transition-colors gap-1 items-center">
+                            <p className="font-semibold text-2xl">Call now</p>
+                             0277 250 250
                         </a>
                     </div>
                 </div>
 
-                {/* Optional separator line */}
+                {/* separator line */}
                 <div className="border-t border-gray-700 mt-6"></div>
-
-                {/* Optional social icons placeholder */}
                 <div className="max-w-7xl mx-auto px-6 py-4 flex justify-center gap-4 text-gray-400">
                     <p className="text-gray-500 text-sm mt-2">
                         &copy; {new Date().getFullYear()} Wade Contractors. All rights reserved. | Site by <a href="https://github.com/Germanminer">Pascal Burri</a>

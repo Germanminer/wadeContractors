@@ -1,6 +1,6 @@
 import {useEffect,useState} from "react";
 const slides = [
-    {src:"/culvert.png",title:"Culvert",text:""},
+    {src:"/culvert.png",title:"Culverts",text:""},
     {src:"/tractor+trailer.jpg",title:"Tractor",text:""},
     {src:"/truck.png",title:"Track and Race Repairs",text:""},
 ]
