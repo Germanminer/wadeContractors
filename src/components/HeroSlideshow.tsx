@@ -68,7 +68,7 @@ export default function HeroSlideshow() {
                                     showText&&isActive ? "fade-in-up" : "fade-out-down"
                                 }`}
                             >
-                                <h2 className="text-6xl font-bold mb-2 text-shadow-lg">{slide.title}</h2>
+                                <h2 className="text-4xl md:text-6xl font-bold mb-2 text-shadow-lg">{slide.title}</h2>
                                 <p className="text-lg">{slide.text}</p>
                             </div>
                         </div>

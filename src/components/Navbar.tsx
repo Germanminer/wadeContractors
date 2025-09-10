@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import {useState} from 'react'
+
 export default function Navbar() {
     const [mobileOpen, setMobileOpen] = useState<boolean>(false)
     return (
@@ -22,19 +23,21 @@ export default function Navbar() {
                         </div>
                         {/*Desktop menu*/}
                         <div className="hidden md:flex space-x-6">
-                        <Link to="/" className="text-white font-semibold hover:text-gray transition">Home</Link>
-                            <Link to="/about" className="text-white font-semibold hover:text-gray transition">About us</Link>
-                            <Link to="/services" className="text-white font-semibold hover:text-gray transition">Services</Link>
-                            <Link to="/hire" className="text-white font-semibold hover:text-gray transition">Equipment Hire</Link>
+                            <Link to="/" className="text-white font-semibold hover:text-gray transition">Home</Link>
+                            <Link to="/about" className="text-white font-semibold hover:text-gray transition">About
+                                us</Link>
+                            <Link to="/servicePage"
+                                  className="text-white font-semibold hover:text-gray transition">Services</Link>
+                            <Link to="/hire" className="text-white font-semibold hover:text-gray transition">Equipment
+                                Hire</Link>
                         </div>
                         {/*Desktop Phone*/}
-                        <a href="tel:02041859763">
+                        <a className="hidden sm:flex" href="tel:02041859763">
                             <div className="block text-white font-semibold">
-                                <p>Call us! 02041859763
+                                <p>Call us 02041859763
                                 </p>
                             </div>
                         </a>
-
                         {/*Mobile Menu button*/}
                         <div className="md:hidden">
                             <button id="menu-btn" className="text-white focus:outline-none cursor-pointer"
@@ -53,7 +56,7 @@ export default function Navbar() {
                 {/*Mobile overlay*/}
                 <div id="mobile-menu-overlay"
                      className={`fixed inset-0 bg-black/50 transition-opacity duration-300 z-40 ${mobileOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-                    onClick={() => setMobileOpen(false)}
+                     onClick={() => setMobileOpen(false)}
                 >
                 </div>
                 {/* Mobile menu panel */}
@@ -74,9 +77,12 @@ export default function Navbar() {
                     </div>
                     <div className="flex flex-col space-y-4 p-6 bg-base">
                         <Link to="/" className="text-white font-semibold hover:text-gray transition">Home</Link>
-                        <Link to="/about" className="text-white font-semibold hover:text-gray transition">About us</Link>
-                        <Link to="/services" className="text-white font-semibold hover:text-gray transition">Services</Link>
-                        <Link to="/hire" className="text-white font-semibold hover:text-gray transition">Equipment Hire</Link>
+                        <Link to="/about" className="text-white font-semibold hover:text-gray transition">About
+                            us</Link>
+                        <Link to="/servicePage"
+                              className="text-white font-semibold hover:text-gray transition">Services</Link>
+                        <Link to="/hire" className="text-white font-semibold hover:text-gray transition">Equipment
+                            Hire</Link>
                     </div>
                 </div>
             </nav>

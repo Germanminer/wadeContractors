@@ -77,6 +77,13 @@ export default function ContactForm() {
                             Submit
                         </button>
                     </form>
+                    <a href="tel:02041859763">
+                        <div className="font-semibold text-2xl flex items-center ">
+                            <img className="w-16 h-16 pr-5" src="/phone.svg" alt="phone icon"/>
+                            <p>Call us 02041859763
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </>
