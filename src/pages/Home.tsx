@@ -1,10 +1,19 @@
 import '../style.css'
+import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar.tsx'
 import HeroSlideshow from "../components/HeroSlideshow.tsx";
 import ContactForm from "../components/ContactForm.tsx";
 import Socials from "../components/Socials.tsx"
-import Fillbox from "../components/FillBox.tsx";
 import Footer from "../components/Footer.tsx";
+import Service from "../components/Service.tsx";
+import Slideshow from "../components/Slideshow.tsx";
+
+const displayServices = [
+    {src: "/servicePics/EarthMovingSiteWorks.jpg", text: "Earth moving & Site Works", link: "/earth-Moving-Site-works"},
+    {src: "/culvert.png", text: "Culverts", link: "/culverts"},
+    {src: "/servicePics/EffluentSpreading.jpg", text: "Effluent Spreading", link: "/effluent-spreading"},
+];
+
 function Home() {
     return (
         <>
@@ -12,7 +21,37 @@ function Home() {
             <ContactForm/>
             <HeroSlideshow/>
             <Socials/>
-            <Fillbox/>
+            <div className="max-w-7xl mx-auto px-6 py-12">
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    {displayServices.map(function (_service, index) {
+                        return <Service {..._service} key={index}/>
+                    })}
+                </div>
+            </div>
+            <div className="max-w-4xl mx-auto p-4">
+                <div className="text-center mb-4">
+                    <Link to="/services">
+                        <h3 className="text-2xl font-semibold mb-2">
+                            Wade Contractors in Action
+                        </h3>
+                        <h3 className="text-xl">
+                            Visit our services for more information
+                        </h3>
+                    </Link>
+                </div>
+                <Slideshow/>
+            </div>
+            <div className="max-w-4xl mx-auto p-4">
+                <div className="text-center mb-4">
+                    <h3 className="text-xl font-bold mb-2">
+                        Feature Videos
+                    </h3>
+                    <h4 className="text-l mb-2">
+                        You will find more videos on our services pages, if there's anything you need more information on just give us a call or fill out the contact form in the bottom right.
+                    </h4>
+
+                </div>
+            </div>
             <Footer/>
         </>
     )

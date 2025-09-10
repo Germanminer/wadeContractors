@@ -26,7 +26,7 @@ export default function Navbar() {
                             <Link to="/" className="text-white font-semibold hover:text-gray transition">Home</Link>
                             <Link to="/about" className="text-white font-semibold hover:text-gray transition">About
                                 us</Link>
-                            <Link to="/servicePage"
+                            <Link to="/services"
                                   className="text-white font-semibold hover:text-gray transition">Services</Link>
                             <Link to="/hire" className="text-white font-semibold hover:text-gray transition">Equipment
                                 Hire</Link>
@@ -79,7 +79,7 @@ export default function Navbar() {
                         <Link to="/" className="text-white font-semibold hover:text-gray transition">Home</Link>
                         <Link to="/about" className="text-white font-semibold hover:text-gray transition">About
                             us</Link>
-                        <Link to="/servicePage"
+                        <Link to="/services"
                               className="text-white font-semibold hover:text-gray transition">Services</Link>
                         <Link to="/hire" className="text-white font-semibold hover:text-gray transition">Equipment
                             Hire</Link>

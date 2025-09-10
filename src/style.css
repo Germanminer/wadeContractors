@@ -2,6 +2,25 @@
 @theme {
   --color-base:#06035B;
 }
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #edf1f7;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #cbcfe0;
+    border: 3px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a0a3c0;
+  }
+}
 @keyframes zoom{
   from{transform:scale(100%)
   }

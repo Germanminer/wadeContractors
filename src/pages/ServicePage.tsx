@@ -11,6 +11,7 @@ const services = [
     {src: "/servicePics/EffluentPond.jpg", text: "Effluent Pond Construction", link: "/effluent-construction"},
     {src:"/servicePics/LasergraderHireage.jpg",text:"Laser grader Hireage",link:"/laser-grader-hireage"},
     {src:"/servicePics/LaserDrainage.jpg",text:"Laser Drainage",link:"/laser-drainage"},
+    {src:"/digger.png",text:"Digger digging hole",link:"/"},
 ]
 
 function Services() {

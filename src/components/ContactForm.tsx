@@ -46,6 +46,7 @@ export default function ContactForm() {
                                     type="text"
                                     className="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
                                     placeholder="Your Name"
+                                    maxLength={50}
                                 />
                             </label>
                         </div>
@@ -57,6 +58,7 @@ export default function ContactForm() {
                                     className="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
                                     placeholder="Your Contact*"
                                     required
+                                    maxLength={50}
                                 />
                             </label>
                         </div>
@@ -67,6 +69,7 @@ export default function ContactForm() {
                                     type="text"
                                     className="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
                                     placeholder="Services, Hires..."
+                                    maxLength={500}
                                 />
                             </label>
                         </div>

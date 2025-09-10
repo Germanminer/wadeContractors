@@ -1,4 +1,3 @@
-// @ts-expect-error To stop text no type error
 export default function Service({src,text,link}:{src:string,text:string,link:string}) {
     return (
         <>
