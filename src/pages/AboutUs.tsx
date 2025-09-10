@@ -8,7 +8,9 @@ function About() {
             <Navbar/>
             <div className="max-w-6xl mx-auto p-4 mb-15 items-center justify-center">
                 <h2 className="font-bold text-xl text-gray-800 mb-5">Meet the Team</h2>
-                <img className="mx-auto" src="/team.jpg" alt="Photo of the wade contracting team"/>
+                <div className='overflow-hidden'>
+                <img className="mx-auto scale-150" src="/team.jpg" alt="Photo of the wade contracting team"/>
+                </div>
                 <div className="text-center text-gray-800 mb-5">
                     <p className='text-sm font-semibold mb-5'>From left to right: Klinton, Gary, Robyn & Kevin Wade with Mark Sayer & Tony Vincent</p>
                     <p className="mb-3">

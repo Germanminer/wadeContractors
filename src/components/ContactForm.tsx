@@ -81,7 +81,7 @@ export default function ContactForm() {
                         </button>
                     </form>
                     <a href="tel:0277250250">
-                        <div className="font-semibold text-2xl flex items-center ">
+                        <div className="font-semibold text-2xl flex items-center bg-blue-600 hover:bg-blue-700 rounded-2xl text-white pl-3">
                             <img className="w-16 h-16 pr-5" src="/phone.svg" alt="phone icon"/>
                             <p>Call us 0277 250 250
                             </p>
