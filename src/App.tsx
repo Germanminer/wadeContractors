@@ -7,6 +7,11 @@ import EquipmentHire from "./pages/EquipmentHire.tsx";
 //Services
 import EarthMovingSiteWorks from "./pages/services/EarthMovingSiteWorks.tsx";
 import Culverts from "./pages/services/Culverts.tsx";
+import EffluentPondConstruction from "./pages/services/EffluentPondConstruction.tsx";
+import EffluentSpreading from "./pages/services/EffluentSpreading.tsx";
+import LaserGraderHireage from "./pages/services/LaserGraderHireage.tsx";
+import TrackAndRaceRepairs from "./pages/services/TrackAndRaceRepairs.tsx";
+import LaserDrainage from "./pages/services/LaserDrainage.tsx";
 import './style.css'
 function App() {
   return (
@@ -19,6 +24,11 @@ function App() {
               <Route path="/services" element={<Services/>}/>
               <Route path="/services/earth-Moving-Site-works" element={<EarthMovingSiteWorks/>}/>
               <Route path="/services/culverts" element={<Culverts/>}/>
+              <Route path="/services/effluent-spreading" element={<EffluentSpreading/>}/>
+              <Route path="/services/track-and-race-repairs" element={<TrackAndRaceRepairs />} />
+              <Route path="/services/effluent-construction" element={<EffluentPondConstruction />} />
+              <Route path="/services/laser-grader-hireage" element={<LaserGraderHireage />} />
+              <Route path="/services/laser-drainage" element={<LaserDrainage />} />
           </Routes>
     </>
   )

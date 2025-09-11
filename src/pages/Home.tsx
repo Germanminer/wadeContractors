@@ -7,11 +7,10 @@ import Socials from "../components/Socials.tsx"
 import Footer from "../components/Footer.tsx";
 import Service from "../components/Service.tsx";
 import Slideshow from "../components/Slideshow.tsx";
-
 const displayServices = [
-    {src: "/servicePics/EarthMovingSiteWorks.jpg", text: "Earth moving & Site Works", link: "/earth-Moving-Site-works"},
-    {src: "/culvert.png", text: "Culverts", link: "/culverts"},
-    {src: "/servicePics/EffluentSpreading.jpg", text: "Effluent Spreading", link: "/effluent-spreading"},
+    {src: "/servicePics/EarthMovingSiteWorks.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
+    {src: "/culvert.png", text: "Culverts", link: "/services/culverts"},
+    {src: "/servicePics/EffluentSpreading.jpg", text: "Effluent Spreading", link: "/services/effluent-spreading"},
 ];
 const slideShowImages = [
     "/culvert.png",
