@@ -5,7 +5,7 @@ import Service from "../components/Service.tsx";
 import Footer from "../components/Footer.tsx"
 const services = [
     {src:"/servicePics/EarthMovingSiteWorks.jpg", text: "Earth moving & Site Works",link:"/services/earth-Moving-Site-works"},
-    {src:"/culvert.png", text: "Culverts", link: "/services/culverts"},
+    {src:"/culvert.webp", text: "Culverts", link: "/services/culverts"},
     {src:"/servicePics/EffluentSpreading.jpg", text: "Effluent Spreading",link: "/services/effluent-spreading"},
     {src:"/servicePics/TrackAndRaceRepairs.jpg",text:"Track & Race Repairs",link:"/services/track-and-race-repairs"},
     {src: "/servicePics/EffluentPond.jpg", text: "Effluent Pond Construction", link: "/services/effluent-construction"},
