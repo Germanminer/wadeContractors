@@ -13,7 +13,27 @@ const displayServices = [
     {src: "/culvert.png", text: "Culverts", link: "/culverts"},
     {src: "/servicePics/EffluentSpreading.jpg", text: "Effluent Spreading", link: "/effluent-spreading"},
 ];
+const slideShowImages = [
+    "/culvert.png",
+    "/digger.png",
+    "/excavator.jpg",
+    "/culvert.png",
+    "/digger.png",
+    "/excavator.jpg",
+    "/culvert.png",
+    "/digger.png",
+    "/excavator.jpg",
+    "/culvert.png",
+    "/digger.png",
+    "/excavator.jpg",
+    "/culvert.png",
+    "/digger.png",
+    "/excavator.jpg",
+    "/culvert.png",
+    "/digger.png",
+    "/excavator.jpg",
 
+]
 function Home() {
     return (
         <>
@@ -55,7 +75,7 @@ function Home() {
                         </h3>
                     </Link>
                 </div>
-                <Slideshow/>
+                <Slideshow images={slideShowImages}/>
             </div>
             <div className="max-w-6xl mx-auto p-4 mb-15">
                 <div className="text-center mb-4">

@@ -1,27 +1,15 @@
-import {useState } from "react";
-const images = [
-    "/culvert.png",
-    "/digger.png",
-    "/excavator.jpg",
-    "/culvert.png",
-    "/digger.png",
-    "/excavator.jpg",
-    "/culvert.png",
-    "/digger.png",
-    "/excavator.jpg",
-    "/culvert.png",
-    "/digger.png",
-    "/excavator.jpg",
-    "/culvert.png",
-    "/digger.png",
-    "/excavator.jpg",
-    "/culvert.png",
-    "/digger.png",
-    "/excavator.jpg",
-
-]
-export default function Slideshow() {
+import React, {useState } from "react";
+export default function Slideshow({images}: {images: string[]}) {
     const [current,setCurrent] = useState(0);
+    React.useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrent((prev) => (prev + 1) % images.length);
+        }, 3000);
+
+        return () => clearInterval(timer);
+    });
+
+
     return (
         <>
             <div className="max-w-4xl mx-auto p-4">
@@ -30,7 +18,7 @@ export default function Slideshow() {
                     <img
                         src={images[current]}
                         alt={`Slide ${current}`}
-                        className="w-full h-96 object-cover rounded-sm shadow-lg"
+                        className="w-full h-[506px] object-cover rounded-sm shadow-lg"
                     />
                 </div>
 
