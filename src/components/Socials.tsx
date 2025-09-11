@@ -1,16 +1,16 @@
 export default function Socials() {
     return (
         <div className="Socials">
-            <div className="items-start p-6">
+            <div className="items-start md:p-6">
                 <div className="text-right">
-                <h2 className="md:text-xl text-md font-semibold text-gray-800 mb-3 flex items-center justify-end gap-2">
+                <h2 className="md:text-xl text-md font-semibold text-gray-800 mb-3 flex items-center justify-center md:justify-end gap-2">
                     Check out our latest updates
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" fill="none"
                          viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </h2>
-                <div className="flex items-center text-center text-white md:space-x-2 space-x-0.5 justify-end gap-3">
+                <div className="flex items-center text-center text-white md:space-x-2 space-x-0.5 justify-center md:justify-end gap-3">
                     <a href="https://www.facebook.com/WadeContractors/" target="_blank" aria-label="Facebook"
                        className="group flex h-10 md:h-15 w-10 md:w-15 items-center justify-center rounded-full bg-base text-[#1877F2] transition hover:bg-[#1877F2] hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"

@@ -20,17 +20,24 @@ function Home() {
             <Navbar/>
             <ContactForm/>
             <HeroSlideshow/>
-            <Socials/>
-            <div className="max-w-5xl mx-auto px-6 py-12 md:text-xl text-lg text-gray-800 text-center">
-                <h1 className='text-2xl font-semibold mb-5'>
-                    Welcome to Wade Contractors
-                </h1>
-                <p>
-                    We are a family-based business providing agricultural contracting in the Waikato for over 30 years. As dairy and goat farmers ourselves, we understand your needs and aim to provide exceptional service. Browse our site for services, photos, and videos — and don’t hesitate to get in touch!
-                </p>
-                <Link to={"about"} className='text-sm'>Read more...</Link>
+            <div className="md:flex items-center justify-between max-w-7xl mx-auto p-6">
+                <div className="max-w-5xl mx-auto px-6 py-12 md:text-xl text-lg text-gray-800 text-center">
+                    <h1 className='text-2xl font-semibold mb-5'>
+                        Welcome to Wade Contractors
+                    </h1>
+                    <p>
+                        We are a family-based business providing agricultural contracting in the Waikato for over 30
+                        years. As dairy and goat farmers ourselves, we understand your needs and aim to provide
+                        exceptional service. Browse our site for services, photos, and videos — and don’t hesitate to
+                        get in touch!
+                    </p>
+                    <Link to={"about"} className='text-sm'>Read more...</Link>
+                </div>
+                <div className="ml-6">
+                    <Socials/>
+                </div>
             </div>
-            <div className="max-w-7xl mx-auto px-6 py-12">
+            <div className="max-w-7xl mx-auto px-6 md:py-12">
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {displayServices.map(function (_service, index) {
                         return <Service {..._service} key={index}/>
