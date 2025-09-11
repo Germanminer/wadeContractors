@@ -40,7 +40,7 @@ export default function Navbar() {
                         </a>
                         {/*Mobile Menu button*/}
                         <div className="md:hidden">
-                            <button id="menu-btn" className="text-white focus:outline-none cursor-pointer"
+                            <button id="menu-btn" className="text-white focus:outline-none cursor-pointer z-50"
                                     onClick={() => setMobileOpen(true)}
                             >
                                 {/*Hamburger*/}
