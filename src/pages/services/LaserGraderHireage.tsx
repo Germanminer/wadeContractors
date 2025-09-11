@@ -2,7 +2,7 @@ import '../../style.css'
 import Navbar from '../../components/Navbar'
 import ContactForm from "../../components/ContactForm";
 import Footer from "../../components/Footer"
-
+import VideoPlayer from "../../components/VideoPlayer"
 export default function LaserGraderHireage() {
     return (
         <>
@@ -21,9 +21,9 @@ export default function LaserGraderHireage() {
                         THE LASER GRADER IS ALSO AVAILABLE FOR HIRE.
                     </p>
                 </div>
-                <video controls className="w-full max-w-3xl shadow-xl ">
-                    <source src="/videos/laser_grader_blade_for_hire_1_837.mp4" type="video/mp4"/>
-                </video>
+                <div className="w-full max-w-3xl shadow-xl ">
+                    <VideoPlayer src="/videos/laser_grader_blade_for_hire_1_837.mp4" type="video/mp4"/>
+                </div>
             </div>
             <Footer/>
         </>

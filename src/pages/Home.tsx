@@ -7,6 +7,7 @@ import Socials from "../components/Socials.tsx"
 import Footer from "../components/Footer.tsx";
 import Service from "../components/Service.tsx";
 import Slideshow from "../components/Slideshow.tsx";
+import VideoPlayer from "../components/VideoPlayer.tsx";
 const displayServices = [
     {src: "/servicePics/EarthMovingSiteWorks.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
     {src: "/culvert.webp", text: "Culverts", link: "/services/culverts"},
@@ -87,12 +88,8 @@ function Home() {
 
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <video controls className="w-full shadow-lg">
-                        <source src="/videos/graterBlade.mp4" type="video/mp4"/>
-                    </video>
-                    <video controls className="w-full shadow-lg">
-                        <source src="/videos/graterBlade2.mp4" type="video/mp4"/>
-                    </video>
+                    <VideoPlayer src="/videos/graterBlade.mp4" type="video/mp4"/>
+                    <VideoPlayer src="/videos/graterBlade2.mp4" type="video/mp4"/>
                 </div>
             </div>
             <Footer/>

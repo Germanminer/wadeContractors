@@ -2,6 +2,7 @@ import '../../style.css'
 import Navbar from '../../components/Navbar'
 import ContactForm from "../../components/ContactForm";
 import Footer from "../../components/Footer"
+import VideoPlayer from "../../components/VideoPlayer.tsx";
 const images:{src:string,alt:string}[] = [
     {src:"/drainagePics/1508111-1597420817210922_orig.jpg",alt:"DrainagePics"},
     {src:"/drainagePics/11058572-1597420853877585_orig.jpg",alt:"DrainagePics"},
@@ -45,18 +46,18 @@ export default function LaserDrainage() {
                     Metal Gravel Bin
                 </h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-20'>
-                    <video controls className='w-full h-100 object-cover rounded-sm shadow-lg'>
-                        <source src="/videos/metalGravelBin.mp4"/>
-                    </video>
-                    <video controls className='w-full h-100 object-cover rounded-sm shadow-lg'>
-                        <source src="/videos/metalGravelBin2.mp4"/>
-                    </video>
-                    <video controls className='w-full h-100 object-cover rounded-sm shadow-lg'>
-                        <source src="/videos/metalGravelBin3.mp4"/>
-                    </video>
-                    <video controls className='w-full h-100 object-cover rounded-sm shadow-lg'>
-                        <source src="/videos/drainWet.mp4"/>
-                    </video>
+                    <div className='w-full object-cover rounded-sm shadow-lg'>
+                        <VideoPlayer src='/videos/metalGravelBin.mp4' type='video/mp4'/>
+                    </div>
+                    <div className='w-full object-cover rounded-sm shadow-lg'>
+                        <VideoPlayer src='/videos/metalGravelBin2.mp4' type='video/mp4'/>
+                    </div>
+                    <div className='w-full object-cover rounded-sm shadow-lg'>
+                        <VideoPlayer src='/videos/metalGravelBin3.mp4' type='video/mp4'/>
+                    </div>
+                    <div className='w-full  object-cover rounded-sm shadow-lg'>
+                        <VideoPlayer src='/videos/drainWet.mp4' type='video/mp4'/>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

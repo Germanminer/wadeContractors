@@ -1,8 +1,10 @@
 import {useEffect,useState} from "react";
 const slides = [
-    {src:"/culvert.webp",title:"Culverts",text:""},
-    {src:"/tractor+trailer.jpg",title:"Tractor",text:""},
+    {src:"/culvert.webp",title:"Culverts and Bridges",text:""},
+    {src:"/mainHeroSlideshowTractorWTrailer.jpg",title:"Earthmoving and site works",text:""},
     {src:"/truck.png",title:"Track and Race Repairs",text:""},
+    {src:"/digger.png",title:"Effluent pond construction",text:""},
+    {src:"/team.jpg",title: "Family Business",text:""},
 ]
 export default function HeroSlideshow() {
     const [index, setIndex] = useState(0);
@@ -78,40 +80,3 @@ export default function HeroSlideshow() {
         </div>
     );
 }
-
-/*
-export default function HeroSlideshow() {
-    const [index, setIndex] = useState(0);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setIndex((prev) => (prev + 1) % slides.length);
-        }, 4000);
-        return () => clearInterval(timer);
-    }, []);
-
-    return (
-        <div className="relative w-full h-[500px] md:h-[700px] overflow-hidden">
-            <div className="relative w-full h-full">
-                {slides.map((slide, i) => (
-                    <div
-                        key={i}
-                        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                            i === index ? "opacity-100" : "opacity-0"
-                        }`}
-                    >
-                        <img
-                            src={slide.src}
-                            className="w-full h-full object-cover zoom-slow"
-                            alt={slide.title}
-                        />
-                        <div className="slide-text absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center text-white p-4">
-                            <h2 className="text-3xl font-bold mb-2">{slide.title}</h2>
-                            <p className="text-lg">{slide.text}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-}*/

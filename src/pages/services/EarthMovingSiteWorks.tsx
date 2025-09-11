@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import ContactForm from "../../components/ContactForm";
 import Footer from "../../components/Footer"
 import Slideshow from "../../components/Slideshow.tsx";
-const hedgeImages:string[] =[
+/*const hedgeImages:string[] =[
     "/siteWorksPics/1645047_orig.jpg",
     "/siteWorksPics/2949360_orig.jpg",
     "/siteWorksPics/3073514_orig.jpg",
@@ -16,7 +16,7 @@ const hedgeImages:string[] =[
     "/siteWorksPics/8337349_orig.jpg",
     "/siteWorksPics/8698197_orig.jpg",
     "/siteWorksPics/9282766_orig.jpg",
-]
+]*/
 const boardDrainImages:string[] =[
     "/siteWorksPics/DrainCrossingpics/688436_orig.jpg",
     "/siteWorksPics/DrainCrossingpics/747489_orig.jpg",
@@ -47,10 +47,12 @@ export default function EarthMovingSiteWorks() {
                         CHECK OUT OUR GALLERY FOR MORE DETAILS ON THE TYPES OF PROJECT WE ARE USED TO WORKING ON.
                     </p>
                 </div>
+                {/* //Hedge and stump removal not wanted
                     <h2 className='font-semibold text-xl text-gray-800'>
                         Hedge and Stump Removal
                     </h2>
                     <Slideshow images={hedgeImages}/>
+            */}
                     <h2 className='font-semibold text-xl text-gray-800'>
                         Board Drain Crossing
                     </h2>
