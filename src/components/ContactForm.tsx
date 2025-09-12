@@ -8,7 +8,7 @@ export default function ContactForm() {
             {/* Floating button */}
             <button
                 onClick={() => setOpen(true)}
-                className="fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-4 rounded-full shadow-lg hover:bg-blue-700 transition"
+                className="fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-4 rounded-full shadow-lg hover:bg-blue-700 transition z-50"
             >
                 Contact Us
             </button>

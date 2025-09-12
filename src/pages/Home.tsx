@@ -15,24 +15,21 @@ const displayServices = [
 ];
 const slideShowImages = [
     "/culvert.webp",
+    "/team.jpg",
     "/digger.png",
-    "/excavator.jpg",
-    "/culvert.webp",
-    "/digger.png",
-    "/excavator.jpg",
-    "/culvert.webp",
-    "/digger.png",
-    "/excavator.jpg",
-    "/culvert.webp",
-    "/digger.png",
-    "/excavator.jpg",
-    "/culvert.webp",
-    "/digger.png",
-    "/excavator.jpg",
-    "/culvert.webp",
-    "/digger.png",
-    "/excavator.jpg",
-
+    "/homeSlideShow/scraper.jpg",
+    "/mainHeroSlideshowTractorWTrailer.jpg",
+    "/roller.jpg",
+    "/homeSlideShow/EffluentSpreaderHome.jpg",
+    "/homeSlideShow/wetEffluentSpreader.jpg",
+    "/EffluentPics/EffluentSpreadingOutside.jpg",
+    "/EffluentPics/EffluentSpreaderOutside2.jpeg",
+    "/EffluentPics/EffluentLoading.jpeg",
+    "/drainagePics/photo-4_orig.jpg",
+    "/drainagePics/photo-1_orig.jpg",
+    "/drainagePics/photo-2_orig.jpg",
+    "/drainagePics/sidedigger_orig.jpg",
+    "drainagePics/img-8149_orig.jpg"
 ]
 function Home() {
     return (

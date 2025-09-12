@@ -42,7 +42,47 @@ export default function HeroSlideshow() {
     }, [index]);
 
     return (
-        <div className="relative w-full h-[500px] md:h-[700px] overflow-hidden">
+        <div className="relative w-full overflow-hidden md:h-[700px]">
+            <div className="relative w-full md:h-full pt-[56.25%] md:pt-0">
+                {slides.map((slide, i) => {
+                    const isActive = i === index;
+                    const prevIndex = (index - 1 + slides.length) % slides.length;
+                    const wasActive = i === prevIndex;
+
+                    return (
+                        <div
+                            key={i}
+                            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                                isActive ? "opacity-100" : "opacity-0"
+                            }`}
+                        >
+                            <img
+                                key={isActive || wasActive ? `img-${i}-active` : `img-${i}`}
+                                src={slide.src}
+                                alt={slide.title}
+                                className="w-full h-full object-cover"
+                            />
+
+                            {/* Text overlay */}
+                            <div
+                                key={isActive ? `text-${i}-${index}` : `text-${i}`}
+                                className={`slide-text absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center text-white p-4 ${
+                                    showText && isActive ? "fade-in-up" : "fade-out-down"
+                                }`}
+                            >
+                                <h2 className="text-4xl md:text-6xl font-bold mb-2 text-shadow-lg">{slide.title}</h2>
+                                <p className="text-lg">{slide.text}</p>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </div>
+
+    );
+}
+/*
+<div className="relative w-full h-[500px] md:h-[700px] overflow-hidden">
             <div className="relative w-full h-full">
                 {slides.map((slide, i) => {
                     const isActive = i === index;
@@ -55,28 +95,24 @@ export default function HeroSlideshow() {
                                 isActive ? "opacity-100" : "opacity-0"
                             }`}
                         >
-                            {/* Image with zoom re-trigger */}
-                            <img
-                                key={isActive||wasActive ? `img-${i}-active` : `img-${i}`}
-                                src={slide.src}
-                                className="w-full h-full object-cover zoom-slow"
-                                alt={slide.title}
-                            />
-
-                            {/* Text fade in/out */}
-                            <div
-                                key={isActive ? `text-${i}-${index}` : `text-${i}`}
-                                className={`slide-text absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center text-white p-4 ${
-                                    showText&&isActive ? "fade-in-up" : "fade-out-down"
-                                }`}
-                            >
-                                <h2 className="text-4xl md:text-6xl font-bold mb-2 text-shadow-lg">{slide.title}</h2>
-                                <p className="text-lg">{slide.text}</p>
-                            </div>
-                        </div>
-                    );
-                })}
-            </div>
-        </div>
-    );
-}
+<img
+    key={isActive||wasActive ? `img-${i}-active` : `img-${i}`}
+    src={slide.src}
+    className="w-full h-full object-cover zoom-slow"
+    alt={slide.title}
+/>
+<div
+    key={isActive ? `text-${i}-${index}` : `text-${i}`}
+    className={`slide-text absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center text-white p-4 ${
+        showText&&isActive ? "fade-in-up" : "fade-out-down"
+    }`}
+>
+    <h2 className="text-4xl md:text-6xl font-bold mb-2 text-shadow-lg">{slide.title}</h2>
+    <p className="text-lg">{slide.text}</p>
+</div>
+</div>
+);
+})}
+</div>
+</div>
+ */
