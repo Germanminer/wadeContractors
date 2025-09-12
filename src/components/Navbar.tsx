@@ -66,6 +66,7 @@ export default function Navbar() {
                     <div className="flex justify-end p-4">
                         <button id="menu-close-btn" className="cursor-pointer text-white"
                                 onClick={() => setMobileOpen(false)}
+                                name='Menu open and close'
                         >
                             {/*Close*/}
                             <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
