@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from "./pages/AboutUs.tsx";
 import Services from "./pages/ServicePage.tsx";
 import EquipmentHire from "./pages/EquipmentHire.tsx";
+import HealthAndSafety from "./pages/HealthAndSafety.tsx";
 //404
 import NotFound from "./pages/NotFound.tsx";
 //Services
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
               <Route path="/hire" element={<EquipmentHire/>}/>
+            <Route path='/health-and-safety' element={<HealthAndSafety/>}/>
               <Route path="/services" element={<Services/>}/>
               <Route path="/services/earth-Moving-Site-works" element={<EarthMovingSiteWorks/>}/>
               <Route path="/services/culverts" element={<Culverts/>}/>
