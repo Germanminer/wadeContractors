@@ -30,7 +30,7 @@ export default function Footer() {
                 {/* separator line */}
                 <div className="mt-6 border-t border-gray-700"></div>
                 <div className="mx-auto flex max-w-7xl justify-center gap-4 px-6 py-4 text-gray-400">
-                    <p className="mt-2 text-sm text-gray-500">
+                    <p className="mt-2 text-sm text-white">
                         &copy; {new Date().getFullYear()} Wade Contractors. All rights reserved. | Site by <a href="https://github.com/Germanminer">Pascal Burri</a>
                     </p>
                 </div>
