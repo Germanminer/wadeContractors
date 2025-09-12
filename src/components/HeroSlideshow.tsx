@@ -42,7 +42,7 @@ export default function HeroSlideshow() {
     }, [index]);
 
     return (
-        <div className="relative w-full overflow-hidden md:h-[500px] xl:h-[700px]">
+        <div className="relative w-full overflow-hidden md:h-[500px] 2xl:h-[700px]">
             <div className="relative w-full md:h-full pt-[56.25%] md:pt-0">
                 {slides.map((slide, i) => {
                     const isActive = i === index;
