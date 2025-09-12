@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import About from "./pages/AboutUs.tsx";
 import Services from "./pages/ServicePage.tsx";
 import EquipmentHire from "./pages/EquipmentHire.tsx";
+//404
+import NotFound from "./pages/NotFound.tsx";
 //Services
 import EarthMovingSiteWorks from "./pages/services/EarthMovingSiteWorks.tsx";
 import Culverts from "./pages/services/Culverts.tsx";
@@ -29,6 +31,8 @@ function App() {
               <Route path="/services/effluent-construction" element={<EffluentPondConstruction />} />
               <Route path="/services/laser-grader-hireage" element={<LaserGraderHireage />} />
               <Route path="/services/laser-drainage" element={<LaserDrainage />} />
+            {/*Catch all 404*/}
+            <Route path="*" element={<NotFound/>}/>
           </Routes>
     </>
   )
