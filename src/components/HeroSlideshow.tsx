@@ -61,6 +61,7 @@ export default function HeroSlideshow() {
                                 src={slide.src}
                                 alt={slide.title}
                                 className="h-full w-full object-cover"
+                                fetchPriority='high'
                             />
 
                             {/* Text overlay */}
