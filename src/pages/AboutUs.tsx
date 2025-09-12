@@ -6,13 +6,13 @@ function About() {
     return (
         <>
             <Navbar/>
-            <div className="max-w-6xl mx-auto p-4 mb-15 items-center justify-center">
-                <h2 className="font-bold text-xl text-gray-800 mb-5">Meet the Team</h2>
+            <div className="mx-auto mb-15 max-w-6xl items-center justify-center p-4">
+                <h2 className="mb-5 text-xl font-bold text-gray-800">Meet the Team</h2>
                 <div className='overflow-hidden'>
                 <img className="mx-auto scale-150" src="/team.jpg" alt="Photo of the wade contracting team"/>
                 </div>
-                <div className="text-center text-gray-800 mb-5">
-                    <p className='text-sm font-semibold mb-5'>From left to right: Klinton, Gary, Robyn & Kevin Wade with Mark Sayer & Tony Vincent</p>
+                <div className="mb-5 text-center text-gray-800">
+                    <p className='mb-5 text-sm font-semibold'>From left to right: Klinton, Gary, Robyn & Kevin Wade with Mark Sayer & Tony Vincent</p>
                     <p className="mb-3">
                         It's a team effort at Wade Contractors with the whole family doing their bit to ensure the job
                         gets done to the best possible standards for you.
@@ -22,10 +22,10 @@ function About() {
                         with you.
                     </p>
                 </div>
-                <div className="border-t border-gray-300 my-6"></div>
+                <div className="my-6 border-t border-gray-300"></div>
                 <div>
-                    <h3 className='font-semibold text-2xl text-gray-800'>About us</h3>
-                    <div className=" mx-auto space-y-4 text-lg md:text-sm leading-relaxed text-gray-800">
+                    <h3 className='text-2xl font-semibold text-gray-800'>About us</h3>
+                    <div className="mx-auto text-lg leading-relaxed text-gray-800 space-y-4 md:text-sm">
                     <p>
                         The Wade family are dairy farmers as well as being agricultural contractors and it’s this combination of skill sets which brings a unique understanding of the requirements of their farmer clients.
                     </p>
@@ -65,7 +65,7 @@ function About() {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-[150px] flex gap-1 bg-gray-700 text-white items-center justify-center">
+            <div className="flex w-full items-center justify-center gap-1 bg-gray-700 text-white h-[150px]">
                 <h4 className="text-2xl">We are always happy to hear from you</h4>
             </div>
             <ContactForm/>

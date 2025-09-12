@@ -15,8 +15,8 @@ export default function EquipmentHire() {
         <>
             <Navbar/>
             <div>
-                <div className='max-w-7xl mx-auto mb-10'>
-                    <div className="text-center mb-4 text-3xl my-10">
+                <div className='mx-auto mb-10 max-w-7xl'>
+                    <div className="my-10 mb-4 text-center text-3xl">
                         <h2>Machine hire - Daily or weekly rates</h2>
                         <h2>Contact us for a price</h2>
                     </div>

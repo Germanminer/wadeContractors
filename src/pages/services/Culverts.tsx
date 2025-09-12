@@ -36,14 +36,14 @@ export default function Culverts() {
         <>
             <Navbar/>
             <ContactForm/>
-                <div className="max-w-7xl mx-auto px-6 py-12 space-y-12">
-                    <h1 className='font-bold text-2xl text-center text-gray-800'>Culverts</h1>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="mx-auto max-w-7xl px-6 py-12 space-y-12">
+                    <h1 className='text-center text-2xl font-bold text-gray-800'>Culverts</h1>
+                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                         <div className="flex flex-col items-center text-center">
                             <img
                                 src="/culvertPics/culvertsGalvanisedTurnbuckle.jpg"
                                 alt="Service 1"
-                                className="w-full h-120 object-cover rounded-2xl shadow-lg"
+                                className="w-full rounded-2xl object-cover shadow-lg h-120"
                             />
                             <h2 className="mt-4 text-2xl font-bold text-gray-800">
                                 16m Galvanised turnbuckle eye to eye
@@ -55,7 +55,7 @@ export default function Culverts() {
                             <img
                                 src="/culvertPics/culvertsWireRopeGrips.jpg"
                                 alt="Service 2"
-                                className="w-full h-120 object-cover rounded-2xl shadow-lg"
+                                className="w-full rounded-2xl object-cover shadow-lg h-120"
                             />
                             <h2 className="mt-4 text-2xl font-bold text-gray-800">
                                 10mm wire rope grips, 7 mm thread x 40mm long and 10mm galv wire rope
@@ -64,7 +64,7 @@ export default function Culverts() {
                     </div>
 
                     <div className="w-full">
-                        <h2 className="text-3xl font-bold text-center mb-6">Our Work in Action</h2>
+                        <h2 className="mb-6 text-center text-3xl font-bold">Our Work in Action</h2>
                         <Slideshow images={slideShowImages}/>
                     </div>
                 </div>

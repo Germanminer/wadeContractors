@@ -36,8 +36,8 @@ export default function EarthMovingSiteWorks() {
         <>
             <Navbar/>
             <ContactForm/>
-            <div className='max-w-7xl mx-auto px-6 py-12 space-y-2'>
-                <h1 className='font-bold text-2xl text-gray-800'>
+            <div className='mx-auto max-w-7xl px-6 py-12 space-y-2'>
+                <h1 className='text-2xl font-bold text-gray-800'>
                     Site works
                 </h1>
                 <div className='max-w-3xl'>
@@ -48,12 +48,12 @@ export default function EarthMovingSiteWorks() {
                     </p>
                 </div>
                 {/* //Hedge and stump removal not wanted
-                    <h2 className='font-semibold text-xl text-gray-800'>
+                    <h2 className='text-xl font-semibold text-gray-800'>
                         Hedge and Stump Removal
                     </h2>
                     <Slideshow images={hedgeImages}/>
             */}
-                    <h2 className='font-semibold text-xl text-gray-800'>
+                    <h2 className='text-xl font-semibold text-gray-800'>
                         Board Drain Crossing
                     </h2>
                     <Slideshow images={boardDrainImages}/>

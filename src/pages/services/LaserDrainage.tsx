@@ -31,8 +31,8 @@ export default function LaserDrainage() {
         <>
             <Navbar/>
             <ContactForm/>
-            <div className='max-w-7xl mx-auto px-6 py-12 space-y-2'>
-                <h1 className='font-bold text-2xl text-gray-800'>
+            <div className='mx-auto max-w-7xl px-6 py-12 space-y-2'>
+                <h1 className='text-2xl font-bold text-gray-800'>
                     Laser Drainage & Novo-flow Trenching
                 </h1>
                 <div className='max-w-3xl'>
@@ -42,32 +42,32 @@ export default function LaserDrainage() {
                         SIDE UNLOADING GRAVEL BIN
                     </p>
                 </div>
-                <h2 className='font-bold text-xl text-gray-800'>
+                <h2 className='text-xl font-bold text-gray-800'>
                     Metal Gravel Bin
                 </h2>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-20'>
-                    <div className='w-full object-cover rounded-sm shadow-lg'>
+                <div className='mb-20 grid grid-cols-1 gap-8 md:grid-cols-2'>
+                    <div className='w-full rounded-sm object-cover shadow-lg'>
                         <VideoPlayer src='/videos/metalGravelBin.mp4' type='video/mp4'/>
                     </div>
-                    <div className='w-full object-cover rounded-sm shadow-lg'>
+                    <div className='w-full rounded-sm object-cover shadow-lg'>
                         <VideoPlayer src='/videos/metalGravelBin2.mp4' type='video/mp4'/>
                     </div>
-                    <div className='w-full object-cover rounded-sm shadow-lg'>
+                    <div className='w-full rounded-sm object-cover shadow-lg'>
                         <VideoPlayer src='/videos/metalGravelBin3.mp4' type='video/mp4'/>
                     </div>
-                    <div className='w-full  object-cover rounded-sm shadow-lg'>
+                    <div className='w-full rounded-sm object-cover shadow-lg'>
                         <VideoPlayer src='/videos/drainWet.mp4' type='video/mp4'/>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
                     {images.map(function (image, index) {
                         return (
                             <div className="flex flex-col items-center text-center" key={index}>
                                 <img
                                     src={image.src}
                                     alt={image.alt}
-                                    className="w-full h-90 object-cover rounded-sm shadow-lg"
+                                    className="w-full rounded-sm object-cover shadow-lg h-90"
                                     loading='lazy'
                                 />
                             </div>

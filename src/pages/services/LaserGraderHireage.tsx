@@ -8,11 +8,11 @@ export default function LaserGraderHireage() {
         <>
             <Navbar/>
             <ContactForm/>
-            <div className="max-w-7xl mx-auto p-6 flex flex-col items-center text-center space-y-6">
+            <div className="mx-auto flex max-w-7xl flex-col items-center p-6 text-center space-y-6">
                 <h2 className="text-3xl font-bold text-gray-800">
                     Laser Grader Hireage
                 </h2>
-                <div className="space-y-3 max-w-2xl text-gray-600">
+                <div className="max-w-2xl text-gray-600 space-y-3">
                     <p>
                         WATCH OUR VIDEO BELOW TO SEE THE LASER GRADER IN ACTION – WHEN YOUR PROJECT NEEDS TO BE PRECISE
                         GIVE US A CALL.
@@ -21,7 +21,7 @@ export default function LaserGraderHireage() {
                         THE LASER GRADER IS ALSO AVAILABLE FOR HIRE.
                     </p>
                 </div>
-                <div className="w-full max-w-3xl shadow-xl ">
+                <div className="w-full max-w-3xl shadow-xl">
                     <VideoPlayer src="/videos/laser_grader_blade_for_hire_1_837.mp4" type="video/mp4"/>
                 </div>
             </div>

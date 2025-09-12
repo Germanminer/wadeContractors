@@ -12,18 +12,18 @@ export default function Slideshow({images}: {images: string[]}) {
 
     return (
         <>
-            <div className="max-w-4xl mx-auto p-4">
+            <div className="mx-auto max-w-4xl p-4">
                 {/* Main image */}
-                <div className="mb-4 w-full aspect-video rounded-sm shadow-lg overflow-hidden">
+                <div className="mb-4 aspect-video w-full overflow-hidden rounded-sm shadow-lg">
                     <img
                         src={images[current]}
                         alt={`Slide ${current}`}
-                        className="w-full h-full object-contain"
+                        className="h-full w-full object-contain"
                     />
                 </div>
 
                 {/* Thumbnails */}
-                <div className="flex gap-2 justify-center overflow-x-auto scrollbar">
+                <div className="flex justify-center gap-2 overflow-x-auto scrollbar">
                     {images.map((img, index) => (
                         <button
                             key={index}
@@ -35,7 +35,7 @@ export default function Slideshow({images}: {images: string[]}) {
                             <img
                                 src={img}
                                 alt={`Thumbnail ${index}`}
-                                className="w-24 h-16 object-contain"
+                                className="h-16 w-24 object-contain"
                                 loading='lazy'
                             />
                         </button>
