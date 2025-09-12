@@ -5,6 +5,16 @@ import Footer from "../components/Footer.tsx"
 export default function HealthAndSafety() {
     return (
         <>
+            <meta name="description" content="Health and safety"/>
+            <meta name="keywords"
+                  content="Health and Safety, Workplace Safety, Occupational Safety, Safety Guidelines, Safety Procedures,
+                   Workplace hazard prevention, Employee safety training, Construction site safety, Personal protective equipment,
+                   Health and safety compliance, Accident prevention at work, Safety risk assessment, Safety reporting procedures,
+                   Safety management system, How to stay safe at work, Safety tips for employees, Safety regulations New Zealand,
+                   Safety checklist for workers"/>
+
+            <meta name="language" content="English"/>
+            <meta name="author" content="Pascal Burri"/>
             <Navbar/>
             <ContactForm/>
             <div className="min-h-screen bg-gray-50">
@@ -79,7 +89,7 @@ export default function HealthAndSafety() {
                                         "All of the above",
                                     ].map((item) => (
                                         <label key={item} className="flex items-center gap-2">
-                                            <input type="checkbox" className="h-4 w-4" />
+                                            <input type="checkbox" className="h-4 w-4"/>
                                             {item}
                                         </label>
                                     ))}
@@ -88,7 +98,8 @@ export default function HealthAndSafety() {
 
                             <div>
                                 <label className="mb-1 block font-semibold">Further Information</label>
-                                <textarea className="w-full rounded border border-gray-300 px-3 py-2" rows={4}></textarea>
+                                <textarea className="w-full rounded border border-gray-300 px-3 py-2"
+                                          rows={4}></textarea>
                             </div>
 
                             <button

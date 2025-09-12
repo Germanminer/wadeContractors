@@ -34,6 +34,30 @@ const slideShowImages = [
 function Home() {
     return (
         <>
+            <meta
+                name="keywords"
+                content="Dairy Effluent, effluent spreading, excavation, earthmoving, site works, effluent pond liner,
+                pond construction, effluent, sand and metal cartage, transport, agricultural contractor, grader, long reach digger,
+                goat farming, New Zealand goat farming, grader hire Waikato, race repair, track repair, goat shed construction,
+                dairy effluent, truck hire, cartage, tractor hire, muckspreader hire, laser drainage consultancy, laser drainage,
+                 dry hire agricultural equipment, Wades, Kevin Wade, Wade Contractors, Wade Farms, earthworks Waikato, Klinton Wade,
+                 Farm Races, agricultural contracting, sub soil drainage, novaflow laying, novaflow drainage, dairy effluent, goat,
+                 cow, excavation, earthmover"
+            />
+            <meta
+                name="description"
+                content="Providing agricultural contracting services in Waikato for over 30 years."
+            />
+            <meta name="language" content="English"/>
+            <meta name="author" content="Pascal Burri"/>
+            <meta property="og:title" content="Wade Contractors"/>
+            <meta
+                property="og:description"
+                content="Wade Contractors - Earthmoving, effluent management, laser drainage Waikato farm contractors.
+                 Phone 0277 250 250. Location Waikato. Earthmoving and site works."
+            />
+            <meta property="og:type" content="website"/>
+            <meta property="og:image" content="/team.jpg"/>
             <Navbar/>
             <ContactForm/>
             <HeroSlideshow/>
@@ -80,7 +104,8 @@ function Home() {
                         Feature Videos
                     </h3>
                     <h4 className="mb-2 text-l">
-                        You will find more videos on our services pages, if there's anything you need more information on just give us a call or fill out the contact form in the bottom right.
+                        You will find more videos on our services pages, if there's anything you need more information
+                        on just give us a call or fill out the contact form in the bottom right.
                     </h4>
 
                 </div>
