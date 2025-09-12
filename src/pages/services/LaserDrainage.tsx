@@ -68,6 +68,7 @@ export default function LaserDrainage() {
                                     src={image.src}
                                     alt={image.alt}
                                     className="w-full h-90 object-cover rounded-sm shadow-lg"
+                                    loading='lazy'
                                 />
                             </div>
                         )

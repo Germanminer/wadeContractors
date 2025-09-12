@@ -36,6 +36,7 @@ export default function Slideshow({images}: {images: string[]}) {
                                 src={img}
                                 alt={`Thumbnail ${index}`}
                                 className="w-24 h-16 object-contain"
+                                loading='lazy'
                             />
                         </button>
                     ))}
