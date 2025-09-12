@@ -1,7 +1,7 @@
 import {useEffect,useState} from "react";
 const slides = [
     {src:"/culvert.webp",title:"Culverts and Bridges",text:""},
-    {src:"/mainHeroSlideshowTractorWTrailer.jpg",title:"Earthmoving and site works",text:""},
+    {src:"/mainHeroSlideshowTractorWTrailer.jpg",title:"Earth moving and site works",text:""},
     {src:"/truck.png",title:"Track and Race Repairs",text:""},
     {src:"/digger.png",title:"Effluent pond construction",text:""},
     {src:"/team.jpg",title: "Family Business",text:""},
