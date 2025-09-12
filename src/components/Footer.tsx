@@ -6,7 +6,7 @@ export default function Footer() {
 
                     {/* Logo & Brand */}
                     <div className="flex flex-col items-center gap-4 md:items-start">
-                        <img src="/logo.png" alt="Wade Contractors Logo" className="h-14 w-auto"/>
+                        <img src="/logo.webp" alt="Wade Contractors Logo" className="h-14 w-auto"/>
                     </div>
 
                     {/* Address */}
