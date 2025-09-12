@@ -14,11 +14,11 @@ export default function Slideshow({images}: {images: string[]}) {
         <>
             <div className="max-w-4xl mx-auto p-4">
                 {/* Main image */}
-                <div className="mb-4">
+                <div className="mb-4 w-full aspect-video rounded-sm shadow-lg overflow-hidden">
                     <img
                         src={images[current]}
                         alt={`Slide ${current}`}
-                        className="w-full h-[506px] object-cover rounded-sm shadow-lg"
+                        className="w-full h-full object-contain"
                     />
                 </div>
 
@@ -35,7 +35,7 @@ export default function Slideshow({images}: {images: string[]}) {
                             <img
                                 src={img}
                                 alt={`Thumbnail ${index}`}
-                                className="w-24 h-16 object-cover"
+                                className="w-24 h-16 object-contain"
                             />
                         </button>
                     ))}
