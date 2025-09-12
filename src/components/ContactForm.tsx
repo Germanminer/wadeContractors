@@ -65,9 +65,8 @@ export default function ContactForm() {
                         <div>
                             <label className="block text-sm font-medium text-gray-700">
                                 How can we help?
-                                <input
-                                    type="text"
-                                    className="mt-1 w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
+                                <textarea
+                                    className="mt-1 w-full h-30 border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
                                     placeholder="Services, Hires..."
                                     maxLength={500}
                                 />
@@ -80,12 +79,12 @@ export default function ContactForm() {
                             Submit
                         </button>
                     </form>
-                    <a href="tel:0277250250">
-                        <div className="font-semibold text-2xl flex items-center bg-blue-600 hover:bg-blue-700 rounded-2xl text-white pl-3">
-                            <img className="w-16 h-16 pr-5" src="/phone.svg" alt="phone icon"/>
-                            <p>Call us 0277 250 250
-                            </p>
-                        </div>
+                    <a
+                        href="tel:0277250250"
+                        className="inline-flex items-center  bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold text-xl rounded-full px-5 py-3 shadow-lg transition-all"
+                    >
+                        <img className="w-8 h-8 mr-3" src="/phone.svg" alt="phone icon"/>
+                        <span>Call us 0277 250 250</span>
                     </a>
                 </div>
             </div>

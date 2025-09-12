@@ -22,7 +22,6 @@ export const VideoJS = (props: { options: optionsType; onReady: (player: never) 
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-expect-error
             const player = playerRef.current = videojs(videoElement, options, () => {
-                videojs.log('player is ready');
                 // @ts-expect-error asd
                 // eslint-disable-next-line @typescript-eslint/no-unused-expressions
                 onReady && onReady(player);
