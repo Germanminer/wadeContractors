@@ -111,10 +111,12 @@ function Home() {
                     </h4>
 
                 </div>
-                <div className='flex justify-center'>
-                    <div className="w-full grid grid-cols-1 gap-6 md:grid-cols-2">
-                        <YoutubeEmbed videoId='8oPjE_vtv9U' isShort/>
-                        <YoutubeEmbed videoId='7IwLPLC9rto' isShort/>
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 justify-items-center">
+                    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md">
+                        <YoutubeEmbed videoId="8oPjE_vtv9U" isShort/>
+                    </div>
+                    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md">
+                        <YoutubeEmbed videoId="7IwLPLC9rto" isShort/>
                     </div>
                 </div>
             </div>
