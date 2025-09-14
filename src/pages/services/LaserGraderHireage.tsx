@@ -2,7 +2,7 @@ import '../../style.css'
 import Navbar from '../../components/Navbar'
 import ContactForm from "../../components/ContactForm";
 import Footer from "../../components/Footer"
-import VideoPlayer from "../../components/VideoPlayer"
+import YoutubeEmbed from "../../components/YoutubeEmbed.tsx";
 export default function LaserGraderHireage() {
     return (
         <>
@@ -21,8 +21,8 @@ export default function LaserGraderHireage() {
                         THE LASER GRADER IS ALSO AVAILABLE FOR HIRE.
                     </p>
                 </div>
-                <div className="w-full max-w-3xl shadow-xl">
-                    <VideoPlayer src="/videos/laser_grader_blade_for_hire_1_837.mp4" type="video/mp4"/>
+                <div className="w-full max-w-md shadow-xl">
+                    <YoutubeEmbed videoId='8oPjE_vtv9U' isShort/>
                 </div>
             </div>
             <Footer/>
