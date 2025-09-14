@@ -1,10 +1,10 @@
 import {useEffect,useState} from "react";
 const slides = [
+    {src:"/team.jpg",title: "Family Business",text:""},
     {src:"/culvert.webp",title:"Culverts and Bridges",text:""},
     {src:"/mainHeroSlideshowTractorWTrailer.jpg",title:"Earth moving and site works",text:""},
     {src:"/truck.png",title:"Track and Race Repairs",text:""},
     {src:"/digger.png",title:"Effluent pond construction",text:""},
-    {src:"/team.jpg",title: "Family Business",text:""},
 ]
 export default function HeroSlideshow() {
     const [index, setIndex] = useState(0);
@@ -71,7 +71,7 @@ export default function HeroSlideshow() {
                                     showText && isActive ? "fade-in-up" : "fade-out-down"
                                 }`}
                             >
-                                <h2 className="mb-2 text-4xl font-bold text-shadow-lg md:text-6xl">{slide.title}</h2>
+                                <h2 className="mb-2 text-4xl font-bold text-shadow-lg md:text-6xl">{""}</h2>
                                 <p className="text-lg">{slide.text}</p>
                             </div>
                         </div>
