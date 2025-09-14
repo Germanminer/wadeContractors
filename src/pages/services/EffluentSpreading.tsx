@@ -2,6 +2,7 @@ import '../../style.css'
 import Navbar from '../../components/Navbar'
 import ContactForm from "../../components/ContactForm";
 import Footer from "../../components/Footer"
+import YoutubeEmbed from "../../components/YoutubeEmbed.tsx";
 export default function EffluentSpreading() {
     return (
         <>
@@ -15,6 +16,7 @@ export default function EffluentSpreading() {
                     RESEARCH IS SHOWING THAT 100 COWS WILL PRODUCE APPROXIMATELY 590KG PER YEAR OF NITROGEN BACK INTO THE SOIL IF SPREAD ON PADDOCKS EFFICIENTLY.
                     WE WILL WORK WITH YOU TO DEVELOP A PLAN THAT SUITS YOUR CONDITIONS.
                 </p>
+                <YoutubeEmbed videoId='V-XJhn1HAlc'/>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="flex flex-col items-center text-center">
                         <img
