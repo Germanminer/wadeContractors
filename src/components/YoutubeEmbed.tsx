@@ -1,11 +1,20 @@
 import { useState } from "react";
-export default function YoutubeEmbed({ videoId }: { videoId:string }) {
+
+interface YoutubeEmbedProps {
+    videoId: string;
+    isShort?: boolean; // pass true if it's a Shorts video
+}
+
+export default function YoutubeEmbed({ videoId, isShort = false }: YoutubeEmbedProps) {
     const [isLoaded, setIsLoaded] = useState(false);
 
     const thumbnail = `https://img.youtube.com/vi/${videoId}/sddefault.jpg`;
 
+    // Decide aspect ratio based on isShort flag
+    const aspectClass = isShort ? "aspect-[9/16]" : "aspect-video";
+
     return (
-        <div className="relative w-full aspect-video overflow-hidden">
+        <div className={`relative w-full ${aspectClass} overflow-hidden`}>
             {!isLoaded ? (
                 <button
                     className="w-full h-full relative group"
@@ -35,11 +44,11 @@ export default function YoutubeEmbed({ videoId }: { videoId:string }) {
             ) : (
                 <iframe
                     className="w-full h-full border-0"
-                    src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                    src={`https://www.youtube.com/embed/${videoId}?autoplay=0&modestbranding=1&rel=0&playsinline=1`}
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                ></iframe>
+                />
             )}
         </div>
     );
