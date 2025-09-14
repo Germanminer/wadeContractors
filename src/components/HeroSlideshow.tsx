@@ -2,6 +2,7 @@ import {useEffect,useState} from "react";
 const slides = [
     {src:"/team.jpg",title: "Family Business",text:""},
     {src:"/culvert.webp",title:"Culverts and Bridges",text:""},
+    {src:'motorGrader.png',title:"Motor Graders",text:""},
     {src:"/mainHeroSlideshowTractorWTrailer.jpg",title:"Earth moving and site works",text:""},
     {src:"/truck.png",title:"Track and Race Repairs",text:""},
     {src:"/digger.png",title:"Effluent pond construction",text:""},
