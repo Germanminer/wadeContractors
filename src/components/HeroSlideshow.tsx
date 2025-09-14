@@ -71,6 +71,7 @@ export default function HeroSlideshow() {
                                     showText && isActive ? "fade-in-up" : "fade-out-down"
                                 }`}
                             >
+                                {/*Swap "" for slide.title to add text back*/}
                                 <h2 className="mb-2 text-4xl font-bold text-shadow-lg md:text-6xl">{""}</h2>
                                 <p className="text-lg">{slide.text}</p>
                             </div>
