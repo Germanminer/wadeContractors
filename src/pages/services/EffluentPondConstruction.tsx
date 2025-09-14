@@ -14,9 +14,9 @@ export default function EffluentPondConstruction() {
         <>
             <Navbar/>
             <ContactForm/>
-            <div className='max-w-7xl mx-auto px-6 py-12 space-y-2'>
-                <h1 className='font-bold text-2xl text-gray-800'>Effluent Pond Construction</h1>
-                <div className="text-gray-700 md:text-sm text-xs space-y-3">
+            <div className='mx-auto max-w-7xl px-6 py-12 space-y-2'>
+                <h1 className='text-2xl font-bold text-gray-800'>Effluent Pond Construction</h1>
+                <div className="text-xs text-gray-700 space-y-3 md:text-sm">
                     <p>
                         Ponds provide temporary storage of effluent, when soil conditions are not suitable for
                         irrigation.
@@ -43,14 +43,14 @@ export default function EffluentPondConstruction() {
                         We will work with you and provide consultancy and expert advice.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     {images.map(function (image,index) {
                         return (
                             <div className="flex flex-col items-center text-center" key={index}>
                                 <img
                                     src={image.src}
                                     alt={image.alt}
-                                    className="w-full h-120 object-cover rounded-lg shadow-lg"
+                                    className="w-full rounded-lg object-cover shadow-lg h-120"
                                 />
                             </div>
                         )

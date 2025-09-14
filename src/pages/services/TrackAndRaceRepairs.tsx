@@ -24,12 +24,12 @@ export default function TrackAndRaceRepairs() {
         <>
             <Navbar/>
             <ContactForm/>
-            <div className='max-w-7xl mx-auto px-6 py-12 space-y-2'>
+            <div className='mx-auto max-w-7xl px-6 py-12 space-y-2'>
                 <div className='text-center'>
-                    <h1 className='font-bold text-2xl text-gray-800'>
+                    <h1 className='text-2xl font-bold text-gray-800'>
                         Track and Race Repairs
                     </h1>
-                    <div className='text-sm text-gray-800 font-semibold '>
+                    <div className='text-sm font-semibold text-gray-800'>
                         <p className='mb-5'>
                             KEEP THE HERD PRODUCTIVE!
                         </p>
@@ -56,11 +56,11 @@ export default function TrackAndRaceRepairs() {
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
                     {videoTextPairs.map(function ({src, text}, index) {
                         return (
                             <div>
-                                <p className='text-lg font-bold text-gray-800 whitespace-pre-line'>
+                                <p className='whitespace-pre-line text-lg font-bold text-gray-800'>
                                     {text}
                                 </p>
                                 <div className="w-full rounded-sm shadow-lg" key={index}>

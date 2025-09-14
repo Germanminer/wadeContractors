@@ -42,8 +42,8 @@ export default function HeroSlideshow() {
     }, [index]);
 
     return (
-        <div className="relative w-full overflow-hidden md:h-[500px] 2xl:h-[700px]">
-            <div className="relative w-full md:h-full pt-[56.25%] md:pt-0">
+        <div className="relative w-full overflow-hidden md:h-[500px] xl:h-[700px]">
+            <div className="relative w-full pt-[56.25%] md:h-full md:pt-0">
                 {slides.map((slide, i) => {
                     const isActive = i === index;
                     const prevIndex = (index - 1 + slides.length) % slides.length;
@@ -60,7 +60,8 @@ export default function HeroSlideshow() {
                                 key={isActive || wasActive ? `img-${i}-active` : `img-${i}`}
                                 src={slide.src}
                                 alt={slide.title}
-                                className="w-full h-full object-cover"
+                                className="h-full w-full object-cover"
+                                fetchPriority='high'
                             />
 
                             {/* Text overlay */}
@@ -70,7 +71,7 @@ export default function HeroSlideshow() {
                                     showText && isActive ? "fade-in-up" : "fade-out-down"
                                 }`}
                             >
-                                <h2 className="text-4xl md:text-6xl font-bold mb-2 text-shadow-lg">{slide.title}</h2>
+                                <h2 className="mb-2 text-4xl font-bold text-shadow-lg md:text-6xl">{slide.title}</h2>
                                 <p className="text-lg">{slide.text}</p>
                             </div>
                         </div>
@@ -82,8 +83,8 @@ export default function HeroSlideshow() {
     );
 }
 /*
-<div className="relative w-full h-[500px] md:h-[700px] overflow-hidden">
-            <div className="relative w-full h-full">
+<div className="relative w-full overflow-hidden h-[500px] md:h-[700px]">
+            <div className="relative h-full w-full">
                 {slides.map((slide, i) => {
                     const isActive = i === index;
                     const prevIndex = (index - 1 + slides.length) % slides.length;
@@ -98,7 +99,7 @@ export default function HeroSlideshow() {
 <img
     key={isActive||wasActive ? `img-${i}-active` : `img-${i}`}
     src={slide.src}
-    className="w-full h-full object-cover zoom-slow"
+    className="h-full w-full object-cover zoom-slow"
     alt={slide.title}
 />
 <div
@@ -107,7 +108,7 @@ export default function HeroSlideshow() {
         showText&&isActive ? "fade-in-up" : "fade-out-down"
     }`}
 >
-    <h2 className="text-4xl md:text-6xl font-bold mb-2 text-shadow-lg">{slide.title}</h2>
+    <h2 className="mb-2 text-4xl font-bold text-shadow-lg md:text-6xl">{slide.title}</h2>
     <p className="text-lg">{slide.text}</p>
 </div>
 </div>

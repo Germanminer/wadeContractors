@@ -1,36 +1,36 @@
 export default function Footer() {
     return (
         <>
-            <footer className="bg-gray-900 text-white flex-shrink-0">
-                <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <footer className="flex-shrink-0 bg-gray-900 text-white">
+                <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-12 md:grid-cols-3">
 
                     {/* Logo & Brand */}
-                    <div className="flex flex-col items-center md:items-start gap-4">
-                        <img src="/logo.png" alt="Wade Contractors Logo" className="h-14 w-auto"/>
+                    <div className="flex flex-col items-center gap-4 md:items-start">
+                        <img src="/logo.webp" alt="Wade Contractors Logo" className="h-14 w-auto"/>
                     </div>
 
                     {/* Address */}
-                    <div className="text-center md:text-left space-y-1 text-white text-sm">
-                        <span className="font-bold text-xl">Wade Contractors</span>
+                    <div className="text-center text-sm text-white space-y-1 md:text-left">
+                        <span className="text-xl font-bold">Wade Contractors</span>
                         <p>544 Alexandra Road</p>
                         <p>RD1 Te Aroha</p>
                         <p>3391, New Zealand</p>
                     </div>
 
                     {/* Contact */}
-                    <div className="flex flex-col items-center md:items-end gap-2">
+                    <div className="flex flex-col items-center gap-2 md:items-end">
                         <a href="tel:0277250250"
-                           className="text-lg font-medium hover:text-yellow-500 transition-colors gap-1 items-center">
-                            <p className="font-semibold text-2xl">Call now</p>
+                           className="items-center gap-1 text-lg font-medium transition-colors hover:text-yellow-500">
+                            <p className="text-2xl font-semibold">Call now</p>
                              0277 250 250
                         </a>
                     </div>
                 </div>
 
                 {/* separator line */}
-                <div className="border-t border-gray-700 mt-6"></div>
-                <div className="max-w-7xl mx-auto px-6 py-4 flex justify-center gap-4 text-gray-400">
-                    <p className="text-gray-500 text-sm mt-2">
+                <div className="mt-6 border-t border-gray-700"></div>
+                <div className="mx-auto flex max-w-7xl justify-center gap-4 px-6 py-4 text-gray-400">
+                    <p className="mt-2 text-sm text-white">
                         &copy; {new Date().getFullYear()} Wade Contractors. All rights reserved. | Site by <a href="https://github.com/Germanminer">Pascal Burri</a>
                     </p>
                 </div>

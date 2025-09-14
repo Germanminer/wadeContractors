@@ -16,22 +16,34 @@ const services = [
 function Services() {
     return (
         <>
+            <meta name="description" content="Earthmoving | Effluent management | Precision levelling · Wade Contractors - Earthmoving, effluent management, laser drainage Waikato farm contractors."/>
+            <meta name="keywords"
+                  content="Agricultural Contracting, Farm Services, Earth Moving, Site Works, Culverts and Bridges,
+                   Effluent Spreading, Track and Race Repairs, Laser Grader Hire, Laser Drainage, Farm earthmoving services,
+                   Agricultural site preparation, Bridge and culvert construction, Effluent management services, Farm track maintenance,
+                   Race track repairs, Precision laser grading, Drainage solutions for farms, Rural contracting services"/>
+
+            <meta name="language" content="English"/>
+            <meta name="author" content="Pascal Burri"/>
             <Navbar/>
             <ContactForm/>
-            <div className="max-w-7xl mx-auto px-6 py-12">
+            <div className="mx-auto max-w-7xl px-6 py-12">
                 <div>
-                <h1 className="text-3xl font-bold text-gray-900">Services</h1>
-                <p className="text-gray-800 mb-8">
-                    Here's an introduction into what we do, click through the titles for more information, then feel free to give us a call or use our contact form.
-                </p>
+                    <h1 className="text-3xl font-bold text-gray-900">Services</h1>
+                    <p className="mb-8 text-gray-800">
+                        Here's an introduction into what we do, click through the titles for more information, then feel
+                        free to give us a call or use our contact form.
+                    </p>
                 </div>
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map(function (_service, index) {
                         return <Service {..._service} key={index}/>
                     })}
                 </div>
-                <p className="text-gray-800 mt-8 min-w-1/2 max-w-3/4">Give us a call if you have a project that you think we could help with that doesn't quite fit into these categories.
-                    We can apply our services and expertise to any kind of farm contracting project and we would be happy to discuss your requirements with you.
+                <p className="mt-8 text-gray-800 min-w-1/2 max-w-3/4">Give us a call if you have a project that you
+                    think we could help with that doesn't quite fit into these categories.
+                    We can apply our services and expertise to any kind of farm contracting project and we would be
+                    happy to discuss your requirements with you.
                     Call or email us today and get the ball rolling.</p>
             </div>
             <Footer/>

@@ -2,10 +2,10 @@ export default function TextImagePair({src,title,text}:{src:string,title:string,
 
     return(
         <>
-            <div className="bg-white shadow p-6">
-                <h3 className="text-xl font-semibold mb-2">{title}</h3>
-                <p className="text-gray-700 leading-relaxed">{text? text:"​"}</p>
-                <img src={src} alt="Example" className="w-full h-60 object-cover rounded-sm "/>
+            <div className="bg-white p-6 shadow">
+                <h3 className="mb-2 text-xl font-semibold">{title}</h3>
+                <p className="leading-relaxed text-gray-700">{text? text:"​"}</p>
+                <img src={src} alt="Example" className="h-60 w-full rounded-sm object-cover"/>
             </div>
         </>
     )

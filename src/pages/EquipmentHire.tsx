@@ -13,10 +13,16 @@ export default function EquipmentHire() {
 
     return (
         <>
+            <meta name="description" content="Earthmoving and site works · Track and race repairs · Culverts and Bridges · Effluent pond construction · Family Business. Welcome to Wade Contractors."/>
+            <meta name="keywords" content="Equipment Hire, Machinery Rental, Farm Equipment Hire, Earthmoving Equipment,
+            Laser Grader Hire, Construction Equipment Rental, Agricultural Machinery Hire, Heavy Machinery Hire, Rural Equipment Hire,
+            Track and Site Equipment"/>
+            <meta name="language" content="English"/>
+            <meta name="author" content="Pascal Burri"/>
             <Navbar/>
             <div>
-                <div className='max-w-7xl mx-auto mb-10'>
-                    <div className="text-center mb-4 text-3xl my-10">
+                <div className='mx-auto mb-10 max-w-7xl'>
+                    <div className="my-10 mb-4 text-center text-3xl">
                         <h2>Machine hire - Daily or weekly rates</h2>
                         <h2>Contact us for a price</h2>
                     </div>
