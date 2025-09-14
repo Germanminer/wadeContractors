@@ -7,7 +7,7 @@ import Socials from "../components/Socials.tsx"
 import Footer from "../components/Footer.tsx";
 import Service from "../components/Service.tsx";
 import Slideshow from "../components/Slideshow.tsx";
-import VideoPlayer from "../components/VideoPlayer.tsx";
+import YoutubeEmbed from "../components/YoutubeEmbed.tsx";
 const displayServices = [
     {src: "/servicePics/EarthMovingSiteWorks.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
     {src: "/culvert.webp", text: "Culverts", link: "/services/culverts"},
@@ -111,9 +111,11 @@ function Home() {
                     </h4>
 
                 </div>
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                    <VideoPlayer src="/videos/graterBlade.mp4" type="video/mp4"/>
-                    <VideoPlayer src="/videos/graterBlade2.mp4" type="video/mp4"/>
+                <div className='flex justify-center'>
+                    <div className="w-full grid grid-cols-1 gap-6 md:grid-cols-2">
+                        <YoutubeEmbed videoId='8oPjE_vtv9U' isShort/>
+                        <YoutubeEmbed videoId='7IwLPLC9rto' isShort/>
+                    </div>
                 </div>
             </div>
             <Footer/>
