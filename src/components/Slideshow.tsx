@@ -12,7 +12,7 @@ export default function Slideshow({images}: {images: string[]}) {
 
     return (
         <>
-            <div className="mx-auto max-w-4xl p-4">
+            <div className="mx-auto max-w-4xl md:p-4">
                 {/* Main image */}
                 <div className="mb-4 aspect-video w-full overflow-hidden rounded-sm shadow-lg">
                     <img
