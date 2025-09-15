@@ -49,8 +49,8 @@ export default function EarthMovingSiteWorks() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <VideoPlayer src="/videos/bigDigoutSiteWorks.mp4" type=""/>
-                    <VideoPlayer src="/videos/SmartSheltersSiteWorks.mp4" type=""/>
+                    <VideoPlayer src="/videos/bigDigoutSiteWorks.mp4" type="video/mp4"/>
+                    <VideoPlayer src="/videos/SmartSheltersSiteWorks.mp4" type="video/mp4"/>
                 </div>
                 {/* //Hedge and stump removal not wanted
                     <h2 className='text-xl font-semibold text-gray-800'>

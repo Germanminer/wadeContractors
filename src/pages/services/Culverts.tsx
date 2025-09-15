@@ -44,7 +44,7 @@ export default function Culverts() {
                 <div className="flex flex-col md:flex-row md:items-start md:space-x-8">
                     <div className="w-full md:w-1/3 flex justify-center mb-6 md:mb-0">
                         <div className="w-full max-w-xs rounded-sm shadow-lg">
-                            <VideoPlayer src="/videos/Culverts.mp4" type=""/>
+                            <VideoPlayer src="/videos/Culverts.mp4" type="video/mp4"/>
                         </div>
                     </div>
                     <div className="w-full md:w-2/3">
