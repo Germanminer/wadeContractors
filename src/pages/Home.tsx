@@ -9,7 +9,7 @@ import Service from "../components/Service.tsx";
 import Slideshow from "../components/Slideshow.tsx";
 import YoutubeEmbed from "../components/YoutubeEmbed.tsx";
 const displayServices = [
-    {src: "/servicePics/EarthMovingSiteWorks.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
+    {src: "/servicePics/laserBlade.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
     {src: "/culvert.webp", text: "Culverts", link: "/services/culverts"},
     {src: "/servicePics/EffluentSpreading.jpg", text: "Effluent Spreading", link: "/services/effluent-spreading"},
 ];
