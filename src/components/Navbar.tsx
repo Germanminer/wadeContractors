@@ -39,6 +39,7 @@ export default function Navbar() {
                         {/* Mobile hamburger */}
                         <div className="flex lg:hidden">
                             <button
+                                title='Mobile menu button'
                                 className="z-50 cursor-pointer text-white focus:outline-none"
                                 onClick={() => setMobileOpen(true)}
                             >
