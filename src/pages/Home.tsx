@@ -60,6 +60,7 @@ function Home() {
             />
             <meta property="og:type" content="website"/>
             <meta property="og:image" content="/team.jpg"/>
+            <link rel="preconnect" as='image' href='/team.jpg'/>
             <Navbar/>
             <ContactForm/>
             <HeroSlideshow/>
