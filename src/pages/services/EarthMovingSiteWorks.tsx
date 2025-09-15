@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar'
 import ContactForm from "../../components/ContactForm";
 import Footer from "../../components/Footer"
 import Slideshow from "../../components/Slideshow.tsx";
+import VideoPlayer from "../../components/VideoPlayer";
 /*const hedgeImages:string[] =[
     "/siteWorksPics/1645047_orig.jpg",
     "/siteWorksPics/2949360_orig.jpg",
@@ -47,16 +48,25 @@ export default function EarthMovingSiteWorks() {
                         CHECK OUT OUR GALLERY FOR MORE DETAILS ON THE TYPES OF PROJECT WE ARE USED TO WORKING ON.
                     </p>
                 </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <VideoPlayer src="/videos/bigDigoutSiteWorks.mp4" type=""/>
+                    <VideoPlayer src="/videos/SmartSheltersSiteWorks.mp4" type=""/>
+                    <div className="md:col-span-2 flex justify-center">
+                        <div className="w-full md:max-w-xl">
+                            <VideoPlayer src="/videos/10TonneTrailerSiteWorks.mp4" type=""/>
+                        </div>
+                    </div>
+                </div>
                 {/* //Hedge and stump removal not wanted
                     <h2 className='text-xl font-semibold text-gray-800'>
                         Hedge and Stump Removal
                     </h2>
                     <Slideshow images={hedgeImages}/>
             */}
-                    <h2 className='text-xl font-semibold text-gray-800'>
-                        Board Drain Crossing
-                    </h2>
-                    <Slideshow images={boardDrainImages}/>
+                <h2 className='text-xl font-semibold text-gray-800'>
+                    Board Drain Crossing
+                </h2>
+                <Slideshow images={boardDrainImages}/>
             </div>
             <Footer/>
         </>
