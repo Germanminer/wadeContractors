@@ -8,6 +8,7 @@ import Footer from "../components/Footer.tsx";
 import Service from "../components/Service.tsx";
 import Slideshow from "../components/Slideshow.tsx";
 import YoutubeEmbed from "../components/YoutubeEmbed.tsx";
+import FacebookPageEmbed from "../components/FacebookPageEmbed.tsx";
 const displayServices = [
     {src: "/excavator.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
     {src: "/culvert.webp", text: "Culverts", link: "/services/culverts"},
@@ -98,7 +99,10 @@ function Home() {
                         </h3>
                     </Link>
                 </div>
-                <Slideshow images={slideShowImages}/>
+                <div className='md:flex'>
+                    <Slideshow images={slideShowImages}/>
+                    <FacebookPageEmbed link='https://www.facebook.com/WadeContractors/'/>
+                </div>
             </div>
             <div className="mx-auto mb-15 max-w-6xl p-4">
                 <div className="mb-4 text-center">
