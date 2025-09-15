@@ -66,9 +66,10 @@ export default function HeroSlideshow() {
                             />
 
                             {/* Text overlay */}
+                            {/*Add  bg-black/20 to the div for */}
                             <div
                                 key={isActive ? `text-${i}-${index}` : `text-${i}`}
-                                className={`slide-text absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center text-white p-4 ${
+                                className={`slide-text absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 ${
                                     showText && isActive ? "fade-in-up" : "fade-out-down"
                                 }`}
                             >
