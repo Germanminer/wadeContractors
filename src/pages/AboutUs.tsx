@@ -16,7 +16,8 @@ function About() {
                     <img className="mx-auto scale-150" src="/team.jpg" alt="Photo of the wade contracting team"/>
                 </div>
                 <div className="mb-5 text-center text-gray-800">
-                    <p className='mb-5 text-sm font-semibold'>From left to right: Klinton, Gary, Robyn & Kevin Wade with Mark Sayer & Tony Vincent</p>
+                    <p className='mb-5 text-sm font-semibold'>From left to right: Klinton, Gary, Robyn & Kevin Wade with
+                        Mark Sayer & Tony Vincent</p>
                     <p className="mb-3">
                         It's a team effort at Wade Contractors with the whole family doing their bit to ensure the job
                         gets done to the best possible standards for you.
@@ -28,7 +29,7 @@ function About() {
                 </div>
                 <div className="my-6 border-t border-gray-300"></div>
                 <div>
-                    <h3 className='text-2xl font-semibold text-gray-800'>About us</h3>
+                    <h1 className='text-2xl font-semibold text-gray-800'>About us</h1>
                     <div className="mx-auto text-lg leading-relaxed text-gray-800 space-y-4 md:text-sm">
                         <p>
                             The Wade family are dairy farmers as well as being agricultural contractors and it’s this
@@ -88,12 +89,21 @@ function About() {
                             scoops, an effluent spreader, lazer blade and mole plough.
                         </p>
                         <p>
-                            As of July 2025 we are no longer goat farming.
-                        </p>
-                        <p>
                             The company offers its services to clients throughout the Waikato.
                         </p>
                     </div>
+                    <div className=' flex justify-center'>
+                        <div className=' w-full object-cover rounded-sm shadow-lg'>
+                            <video
+                                src="/videos/History.mp4"
+                                autoPlay
+                                loop
+                                muted
+                            ></video>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
             <div className="flex w-full items-center justify-center gap-1 bg-gray-700 text-white h-[150px]">

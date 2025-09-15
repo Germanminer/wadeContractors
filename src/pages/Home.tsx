@@ -7,11 +7,10 @@ import Socials from "../components/Socials.tsx"
 import Footer from "../components/Footer.tsx";
 import Service from "../components/Service.tsx";
 import Slideshow from "../components/Slideshow.tsx";
-import VideoPlayer from "../components/VideoPlayer.tsx";
+import YoutubeEmbed from "../components/YoutubeEmbed.tsx";
 const displayServices = [
-    {src: "/servicePics/EarthMovingSiteWorks.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
+    {src: "/excavator.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
     {src: "/culvert.webp", text: "Culverts", link: "/services/culverts"},
-    {src: "/servicePics/EffluentSpreading.jpg", text: "Effluent Spreading", link: "/services/effluent-spreading"},
 ];
 const slideShowImages = [
     "/culvert.webp",
@@ -60,6 +59,7 @@ function Home() {
             />
             <meta property="og:type" content="website"/>
             <meta property="og:image" content="/team.jpg"/>
+            <link rel="preconnect" as='image' href='/team.jpg'/>
             <Navbar/>
             <ContactForm/>
             <HeroSlideshow/>
@@ -81,7 +81,7 @@ function Home() {
                 </div>
             </div>
             <div className="mx-auto max-w-7xl px-6 md:py-12">
-                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
                     {displayServices.map(function (_service, index) {
                         return <Service {..._service} key={index}/>
                     })}
@@ -111,9 +111,13 @@ function Home() {
                     </h4>
 
                 </div>
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                    <VideoPlayer src="/videos/graterBlade.mp4" type="video/mp4"/>
-                    <VideoPlayer src="/videos/graterBlade2.mp4" type="video/mp4"/>
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 justify-items-center">
+                    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md">
+                        <YoutubeEmbed videoId="8oPjE_vtv9U" isShort/>
+                    </div>
+                    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md">
+                        <YoutubeEmbed videoId="7IwLPLC9rto" isShort/>
+                    </div>
                 </div>
             </div>
             <Footer/>
