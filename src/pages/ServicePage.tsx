@@ -5,8 +5,8 @@ import Service from "../components/Service.tsx";
 import Footer from "../components/Footer.tsx"
 const services = [
     {src:"/servicePics/motorGrader.jpg",text:"Track & Race Repairs",link:"/services/track-and-race-repairs"},
-    {src:"/servicePics/laserBlade.jpg", text: "Earth moving & Site Works",link:"/services/earth-Moving-Site-works"},
-    {src:"/servicePics/LasergraderHireage.jpg",text:"Laser grader Hireage",link:"/services/laser-grader-hireage"},
+    {src:"/excavator.jpg", text: "Earth moving & Site Works",link:"/services/earth-Moving-Site-works"},
+    {src:"/servicePics/laserBlade.jpg",text:"Laser grader Hireage",link:"/services/laser-grader-hireage"},
     {src:"/servicePics/LaserDrainage.jpg",text:"Laser Drainage",link:"/services/laser-drainage"},
     {src:"/culvert.webp", text: "Culverts", link: "/services/culverts"},
     {src:"/servicePics/EffluentSpreading.jpg", text: "Effluent Spreading",link: "/services/effluent-spreading"},

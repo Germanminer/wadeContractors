@@ -89,9 +89,6 @@ function About() {
                             scoops, an effluent spreader, lazer blade and mole plough.
                         </p>
                         <p>
-                            As of July 2025 we are no longer goat farming.
-                        </p>
-                        <p>
                             The company offers its services to clients throughout the Waikato.
                         </p>
                     </div>

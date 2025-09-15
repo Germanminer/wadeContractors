@@ -9,8 +9,7 @@ import Service from "../components/Service.tsx";
 import Slideshow from "../components/Slideshow.tsx";
 import YoutubeEmbed from "../components/YoutubeEmbed.tsx";
 const displayServices = [
-    {src:"/servicePics/motorGrader.jpg",text:"Track & Race Repairs",link:"/services/track-and-race-repairs"},
-    {src: "/servicePics/laserBlade.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
+    {src: "/excavator.jpg", text: "Earth moving & Site Works", link: "/services/earth-Moving-Site-works"},
     {src: "/culvert.webp", text: "Culverts", link: "/services/culverts"},
 ];
 const slideShowImages = [
@@ -82,7 +81,7 @@ function Home() {
                 </div>
             </div>
             <div className="mx-auto max-w-7xl px-6 md:py-12">
-                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
                     {displayServices.map(function (_service, index) {
                         return <Service {..._service} key={index}/>
                     })}
