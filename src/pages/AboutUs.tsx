@@ -2,6 +2,7 @@ import '../style.css'
 import Navbar from '../components/Navbar.tsx'
 import ContactForm from "../components/ContactForm.tsx";
 import Footer from '../components/Footer.tsx'
+import VideoPlayer from "../components/VideoPlayer.tsx";
 function About() {
     return (
         <>
@@ -92,18 +93,7 @@ function About() {
                             The company offers its services to clients throughout the Waikato.
                         </p>
                     </div>
-                    <div className=' flex justify-center'>
-                        <div className=' w-full object-cover rounded-sm shadow-lg'>
-                            <video
-                                src="/videos/History.mp4"
-                                autoPlay
-                                loop
-                                muted
-                            ></video>
-                        </div>
-
-                    </div>
-
+                            <VideoPlayer src='/videos/History.mp4' type='video/mp4' />
                 </div>
             </div>
             <div className="flex w-full items-center justify-center gap-1 bg-gray-700 text-white h-[150px]">
