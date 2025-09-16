@@ -8,7 +8,7 @@ const videoTextPairs:{src:string,text:string}[] =[
     {src:"/videos/trackAndRaceRepairs/hyndmans_quarry_-_brown_rotten_rock_623.mp4",text:"Hyndmans Quarry:     \n" + "Brown rotten Rock"},
     {src:"/videos/trackAndRaceRepairs/hyndmans_quarry_-_farmers_40_orange-green_mix_393.mp4",text:"Hyndmans Quarry \n" + "Orange Green Mix"},
     {src:"/videos/trackAndRaceRepairs/toataoroa_quarry_-_farmers_40_soft_785.mp4",text:"Toataoroa Quarry\n" + "Farmers 40\n"},
-    {src:"/videos/trackAndRaceRepairs/tauhei_quarry_map40_332.mp4",text:"Tuahei Quarry\n" + "MAP 40\n"},
+    {src:"/videos/trackAndRaceRepairs/tauhei_quarry_map40_332.mp4",text:"Tauhei Quarry\n" + "MAP 40\n"},
     {src:"/videos/trackAndRaceRepairs/hyndmans_quarry_-_gap40_for_tanker_tracks_923.mp4",text:"Hyndmans Quarry \n" +"GAP 40\n"},
     {src:"/videos/trackAndRaceRepairs/TaotaoroaQuarry2040DrainageMetal.mp4",text:"Taotaoroa Quarry\n" + "20/40 Drainage Metal\n"},
     {src:"/videos/trackAndRaceRepairs/leachQuarryTirohiaCrusherRun.mp4",text:"Leach Quarry Tirohia\n" + "Crusher Run"},
