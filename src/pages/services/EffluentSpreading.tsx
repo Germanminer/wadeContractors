@@ -19,32 +19,6 @@ export default function EffluentSpreading() {
                     WE WILL WORK WITH YOU TO DEVELOP A PLAN THAT SUITS YOUR CONDITIONS.
                 </p>
                 <YoutubeEmbed videoId='V-XJhn1HAlc'/>
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                    <div className="flex flex-col items-center text-center">
-                        <img
-                            src="/EffluentPics/effluentSpreadingInBarn.jpg"
-                            alt="Effluent Spreading in Barn"
-                            className="w-full rounded-2xl object-cover shadow-lg h-120"
-                        />
-                    </div>
-                    <div className="flex flex-col items-center text-center">
-                        <img
-                            src="/EffluentPics/EffluentSpreadingOutside.jpg"
-                            alt="Effluent Spreading Outside."
-                            className="w-full rounded-2xl object-cover shadow-lg h-120"
-                        />
-                    </div>
-                    <div className="md:col-span-2 flex justify-center">
-                        <div className="w-full md:max-w-2xl">
-                            <img
-                                src="/EffluentPics/MuckSpreader.jpg"
-                                alt="Effluent Spreading Outside."
-                                className="w-full rounded-2xl object-cover shadow-lg h-120"
-                            />
-                        </div>
-                    </div>
-                </div>
-
             </div>
             <Footer/>
         </>
