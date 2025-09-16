@@ -16,7 +16,7 @@ const displayServices = [
 const slideShowImages = [
     "/culvert.webp",
     "/team.jpg",
-    "/digger.png",
+    "/digger.webp",
     "/homeSlideShow/scraper.jpg",
     "/mainHeroSlideshowTractorWTrailer.jpg",
     "/roller.jpg",

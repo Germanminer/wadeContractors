@@ -2,10 +2,10 @@ import {useEffect,useState} from "react";
 const slides = [
     {src:"/team.jpg",title: "Family Business",text:""},
     {src:"/culvert.webp",title:"Culverts and Bridges",text:""},
-    {src:'motorGraderWDriver.png',title:"Motor Graders",text:""},
+    {src:'motorGraderWDriver.webp',title:"Motor Graders",text:""},
     {src:"/mainHeroSlideshowTractorWTrailer.jpg",title:"Earth moving and site works",text:""},
-    {src:"/truck.png",title:"Track and Race Repairs",text:""},
-    {src:"/digger.png",title:"Effluent pond construction",text:""},
+    {src:"/truck.webp",title:"Track and Race Repairs",text:""},
+    {src:"/digger.webp",title:"Effluent pond construction",text:""},
 ]
 export default function HeroSlideshow() {
     const [index, setIndex] = useState(0);

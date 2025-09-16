@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import ContactForm from "../../components/ContactForm";
 import Footer from "../../components/Footer"
 const images = [
-    {src:"/digger.png", alt:"Digger"},
+    {src:"/digger.webp", alt:"Digger"},
     {src:"/EffluentPics/EffluentPond3.jpg", alt:"Crew in effluent Pond"},
     {src:"/EffluentPics/EffluentPond4.jpg", alt:"Trailer in effluent Pond"},
     {src:"/EffluentPics/EffluentPondDigging.jpg", alt:"Laying pipes"},
