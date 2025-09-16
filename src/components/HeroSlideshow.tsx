@@ -11,30 +11,6 @@ export default function HeroSlideshow() {
     const [index, setIndex] = useState(0);
     const [showText] = useState(true);
     useEffect(() => {
-        /*
-        let textOutTimer: number | undefined;
-
-        //Main timer
-        const intervalTimer = setInterval(()=>{
-            //Time for text to leave, make as much less than the next one as you want difference
-            textOutTimer = setTimeout(()=>{
-                setShowText(false);
-            },3000)
-            setIndex((prev) => (prev + 1) % slides.length);
-        },4000)
-        //TextTimer
-        //Time before animating text
-        const textInTimer = setTimeout(()=>{
-            setShowText(true);
-        },1000)
-        return()=>{
-            clearInterval(intervalTimer)
-            clearTimeout(textOutTimer)
-            clearTimeout(textInTimer)
-        }
-
-         */
-
         const timer = setInterval(() => {
             setIndex((prev) => (prev + 1) % slides.length);
         }, 2500);
@@ -44,6 +20,7 @@ export default function HeroSlideshow() {
 
     return (
         <div className="relative w-full overflow-hidden md:h-[500px] xl:h-[700px]">
+            <link rel="preload" href="/team.jpg" as='image'/>
             <div className="relative w-full pt-[56.25%] md:h-full md:pt-0">
                 {slides.map((slide, i) => {
                     const isActive = i === index;
@@ -62,7 +39,8 @@ export default function HeroSlideshow() {
                                 src={slide.src}
                                 alt={slide.title}
                                 className="h-full w-full object-cover"
-                                fetchPriority='high'
+                                fetchPriority={i===0?'high':'auto'}
+                                loading={i===0? 'eager':'lazy'}
                             />
 
                             {/* Text overlay */}
