@@ -4,21 +4,26 @@ function ContactEmailSetup() {
     const [outputText, setOutputText] = useState('');
     const [failed,setFailed] = useState(false);
     const formRef = useRef<HTMLFormElement>(null);
-    const sendEmail = (e: { preventDefault: () => void; }) => {
+    const sendEmail = (e: { preventDefault: () => void }) => {
         e.preventDefault();
-        // Replace these with your actual IDs from the EmailJS dashboard
         const serviceId = 'wadeContractors';
         const templateId = 'template_0mhuzx6';
         const userId = 'DD7LQI1Tis5eNNxh_';
-        //@ts-expect-error sad
-        emailjs.sendForm(serviceId, templateId, form.current, userId)
-            .then(() => {
-            setOutputText("Message sent successfully!");
-            setFailed(false);
-            }, () => {
-                setOutputText("Oops! Something went wrong! Please try again!");
-                setFailed(true);
-            }); };
+        if (formRef.current) {
+            emailjs.sendForm(serviceId, templateId, formRef.current, userId)
+                .then(() => {
+                    setOutputText("Message sent successfully!");
+                    setFailed(false);
+                })
+                .catch(() => {
+                    setOutputText("Oops! Something went wrong! Please try again!");
+                    setFailed(true);
+                });
+        } else {
+            setOutputText("Form is not ready!");
+            setFailed(true);
+        }
+    };
     return (
         <>
             <form className="flex-1 space-y-4" ref={formRef} onSubmit={sendEmail}>
