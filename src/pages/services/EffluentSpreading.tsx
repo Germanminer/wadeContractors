@@ -2,7 +2,7 @@ import '../../style.css'
 import Navbar from '../../components/Navbar'
 import ContactForm from "../../components/ContactForm";
 import Footer from "../../components/Footer"
-import YoutubeEmbed from "../../components/YoutubeEmbed.tsx";
+import VideoPlayer from "../../components/VideoPlayer";
 export default function EffluentSpreading() {
     return (
         <>
@@ -18,7 +18,7 @@ export default function EffluentSpreading() {
                     THE SOIL IF SPREAD ON PADDOCKS EFFICIENTLY.
                     WE WILL WORK WITH YOU TO DEVELOP A PLAN THAT SUITS YOUR CONDITIONS.
                 </p>
-                <YoutubeEmbed videoId='V-XJhn1HAlc'/>
+                <VideoPlayer src='/videos/EffluentSpreadersWorkingTwo.mp4' type='video/mp4' />
             </div>
             <Footer/>
         </>
