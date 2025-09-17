@@ -1,13 +1,13 @@
-export async function onRequestPost(context: {
-    request: Request;
-    env: {
-        EMAILJS_SERVICE_ID: string;
-        EMAILJS_TEMPLATE_ID: string;
-        EMAILJS_USER_ID: string;
-    };
-}) {
+export async function onRequestPost(context: any) {
     try {
         const body = (await context.request.json()) as { [key: string]: string };
+
+        // Debugging: log environment variables (do NOT commit keys!)
+        console.log("ENV", {
+            service: context.env.EMAILJS_SERVICE_ID,
+            template: context.env.EMAILJS_TEMPLATE_ID,
+            user: context.env.EMAILJS_USER_ID
+        });
 
         const payload = {
             service_id: context.env.EMAILJS_SERVICE_ID,
@@ -32,8 +32,7 @@ export async function onRequestPost(context: {
         }
 
         return new Response(JSON.stringify({ success: true, body: text }), { status: 200 });
-    } catch (err: unknown) {
-        // @ts-expect-error sad
+    } catch (err: any) {
         return new Response(JSON.stringify({ error: err.message }), { status: 500 });
     }
 }
