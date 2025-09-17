@@ -23,6 +23,7 @@ export async function onRequestPost(context: any) {
         });
 
         const text = await response.text();
+        console.log("EmailJS response:", text); // <- add this
 
         if (!response.ok) {
             return new Response(
@@ -30,6 +31,7 @@ export async function onRequestPost(context: any) {
                 { status: 500 }
             );
         }
+
 
         return new Response(JSON.stringify({ success: true, body: text }), { status: 200 });
     } catch (err: any) {
