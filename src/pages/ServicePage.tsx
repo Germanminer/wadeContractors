@@ -6,9 +6,9 @@ import Footer from "../components/Footer.tsx"
 const services = [
     {src:"/excavator.jpg", text: "Earth moving & Site Works",link:"/services/earth-Moving-Site-works"},
     {src:"/servicePics/laserBlade.jpg",text:"Laser grader Hireage",link:"/services/laser-grader-hireage"},
-    {src:"/servicePics/LaserDrainage.jpg",text:"Laser Drainage",link:"/services/laser-drainage"},
-    {src:"/culvert.webp", text: "Culverts", link: "/services/culverts"},
     {src:"/servicePics/EffluentSpreading.jpg", text: "Effluent Spreading",link: "/services/effluent-spreading"},
+    {src:"/culvert.webp", text: "Culverts", link: "/services/culverts"},
+    {src:"/servicePics/LaserDrainage.jpg",text:"Laser Drainage",link:"/services/laser-drainage"},
     {src:"/servicePics/motorGrader.jpg",text:"Track & Race Repairs",link:"/services/track-and-race-repairs"},
     /*{src: "/servicePics/EffluentPond.jpg", text: "Effluent Pond Construction", link: "/services/effluent-construction"},*/
 ]
