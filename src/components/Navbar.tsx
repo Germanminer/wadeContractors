@@ -9,17 +9,11 @@ export default function Navbar() {
             <nav className="fixed top-0 left-0 z-50 w-full transition-all duration-300 bg-base">
                 <div className="mx-auto px-4 max-w-7xl sm:px-6 lg:px-8">
                     <div className="flex h-16 items-center justify-between">
-                        <div className="flex items-center space-x-6">
-                            {/* Logo */}
-                            <Link to="/" className="flex-shrink-0">
-                                <img className="h-16 w-auto" src="/darkLogo.png" alt="Wade contractors" />
-                            </Link>
 
-                            {/* Phone */}
-                            <a href="tel:0277250250" className="hidden sm:inline-block font-semibold text-white">
-                                Call us 0277 250 250
-                            </a>
-                        </div>
+                        {/* Logo */}
+                        <Link to="/" className="flex-shrink-0">
+                            <img className="h-16 w-auto" src="/darkLogo.png" alt="Wade contractors" />
+                        </Link>
 
                         {/* Desktop menu links */}
                         <div className="hidden lg:flex space-x-6">
@@ -29,9 +23,15 @@ export default function Navbar() {
                             <Link to="/hire" className="font-semibold text-white transition hover:text-gray">Equipment Hire</Link>
                         </div>
 
-                        {/* Email */}
-                        <div className="hidden md:flex">
-                            <a href="mailto:office@wadecontractors.co.nz" className="font-semibold text-white">
+                        {/* Contact info */}
+                        <div className="flex items-center space-x-6">
+                            {/* Phone */}
+                            <a href="tel:0277250250" className="hidden sm:inline-block font-semibold text-white">
+                                Call us 0277 250 250
+                            </a>
+
+                            {/* Email */}
+                            <a href="mailto:office@wadecontractors.co.nz" className="hidden md:inline-block font-semibold text-white">
                                 office@wadecontractors.co.nz
                             </a>
                         </div>
@@ -50,8 +50,10 @@ export default function Navbar() {
                                 </svg>
                             </button>
                         </div>
+
                     </div>
                 </div>
+
 
                 {/* Mobile overlay */}
                 <div
