@@ -3,34 +3,21 @@ function ContactEmailSetup() {
     const [outputText, setOutputText] = useState('');
     const [failed,setFailed] = useState(false);
     const formRef = useRef<HTMLFormElement>(null);
-    const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    const sendEmail = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
-        setOutputText("Sending...");
-        setFailed(false);
-        if (!formRef.current) return;
-        const formData = new FormData(formRef.current);
-        const data = Object.fromEntries(formData.entries());
-
-        try {
-            const res = await fetch("/send-email", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(data),
-            });
-
-            if (res.ok) {
-                setOutputText("✅ Message sent successfully!");
-                setFailed(false);
-                formRef.current.reset();
-            } else {
-                throw new Error("Send failed");
-            }
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        } catch (err) {
-            setOutputText("❌ Oops! Something went wrong. Please try again!");
-            setFailed(true);
-        }
-    };
+        // Replace these with your actual IDs from the EmailJS dashboard
+        const serviceId = 'wadeContractors';
+        const templateId = 'template_0mhuzx6';
+        const userId = 'DD7LQI1Tis5eNNxh_';
+        //@ts-expect-error sad
+        emailjs.sendForm(serviceId, templateId, form.current, userId)
+            .then(() => {
+            setOutputText("Message sent successfully!");
+            setFailed(false);
+            }, () => {
+                setOutputText("Oops! Something went wrong! Please try again!");
+                setFailed(true);
+            }); };
     return (
         <>
             <form className="flex-1 space-y-4" ref={formRef} onSubmit={sendEmail}>
