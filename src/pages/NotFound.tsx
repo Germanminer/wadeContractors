@@ -19,7 +19,6 @@ export default function NotFound() {
                     Home
                 </Link>
             </main>
-
             <Footer />
         </div>
     );

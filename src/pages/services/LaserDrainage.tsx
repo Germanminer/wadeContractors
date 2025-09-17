@@ -51,13 +51,12 @@ export default function LaserDrainage() {
                         <VideoPlayer src='/videos/metalGravelBin.mp4' type='video/mp4'/>
                     </div>
                     <div className='w-full rounded-sm object-cover shadow-lg'>
-                        <VideoPlayer src='/videos/metalGravelBin2.mp4' type='video/mp4'/>
-                    </div>
-                    <div className='w-full rounded-sm object-cover shadow-lg'>
                         <VideoPlayer src='/videos/metalGravelBin3.mp4' type='video/mp4'/>
                     </div>
-                    <div className='w-full rounded-sm object-cover shadow-lg'>
-                        <VideoPlayer src='/videos/drainWet.mp4' type='video/mp4'/>
+                    <div className="md:col-span-2 flex justify-center rounded-sm object-cover shadow-lg">
+                        <div className="w-full md:max-w-2xl">
+                            <VideoPlayer src='/videos/drainWet.mp4' type='video/mp4'/>
+                        </div>
                     </div>
                 </div>
                 <Slideshow images={images}/>
