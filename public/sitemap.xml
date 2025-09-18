@@ -28,4 +28,10 @@
         <priority>0.7</priority>
         <changefreq>yearly</changefreq>
     </url>
+    <!-- Robots.txt -->
+    <url>
+        <loc>https://www.wadecontractors.co.nz/robots.txt</loc>
+        <priority>0.2</priority>
+        <changefreq>yearly</changefreq>
+    </url>
 </urlset>
