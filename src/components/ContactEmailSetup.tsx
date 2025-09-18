@@ -3,9 +3,14 @@ import emailjs from '@emailjs/browser';
 function ContactEmailSetup() {
     const [outputText, setOutputText] = useState('');
     const [failed,setFailed] = useState(false);
+    const [loading, setLoading] = useState(false);
     const formRef = useRef<HTMLFormElement>(null);
     const sendEmail = (e: { preventDefault: () => void }) => {
         e.preventDefault();
+        //States
+        setLoading(true);
+        setOutputText('Sending...');
+        setFailed(false);
         const serviceId = 'wadeContractors';
         const templateId = 'template_0mhuzx6';
         const userId = 'DD7LQI1Tis5eNNxh_';
@@ -13,14 +18,18 @@ function ContactEmailSetup() {
             emailjs.sendForm(serviceId, templateId, formRef.current, userId)
                 .then(() => {
                     setOutputText("Message sent successfully!");
+                    setLoading(false);
                     setFailed(false);
                 })
                 .catch(() => {
                     setOutputText("Oops! Something went wrong! Please try again!");
+                    setLoading(false);
                     setFailed(true);
                 });
+            formRef.current?.reset();
         } else {
             setOutputText("Form is not ready!");
+            setLoading(false);
             setFailed(true);
         }
     };
@@ -76,11 +85,19 @@ function ContactEmailSetup() {
             </form>
             {outputText && (
                 <p
-                    className={`my-2 px-3 py-2 text-sm rounded-md border 
-                    ${failed? "text-red-600 bg-red-100 border-red-300" : "text-green-600 bg-green-100 border-green-300"}`}>
-                {outputText}
+                    className={`my-4 w-full text-center text-lg font-semibold rounded-lg border-2 shadow-md py-3 px-4
+        ${loading
+                        ? "text-orange-700 bg-orange-200 border-orange-400"
+                        : failed
+                            ? "text-red-700 bg-red-200 border-red-400"
+                            : "text-green-700 bg-green-200 border-green-400"
+                    }`}
+                >
+                    {outputText}
                 </p>
             )}
+
+
         </>
     );
 }
