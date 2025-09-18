@@ -50,7 +50,7 @@ function Home() {
             />
             <meta name="language" content="English"/>
             <meta name="author" content="Pascal Burri"/>
-            <meta property="og:url" content="https://wadecontractors.pages.dev/"/>
+            <meta property="og:url" content="https://www.wadecontractors.co.nz/"/>
             <meta property="og:site_name" content="Wade Contractors - Earthmoving, effluent management, laser drainage Waikato farm contractors"/>
             <meta property="og:title" content="Wade Contractors"/>
             <meta
