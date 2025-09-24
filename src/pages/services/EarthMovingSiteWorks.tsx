@@ -35,6 +35,7 @@ const boardDrainImages:string[] =[
 export default function EarthMovingSiteWorks() {
     return (
         <>
+            <meta name="description" content="Earthmoving and site works · Family Business. Welcome to Wade Contractors."/>
             <Navbar/>
             <ContactForm/>
             <div className='mx-auto max-w-7xl px-6 py-12 space-y-2'>
@@ -53,7 +54,7 @@ export default function EarthMovingSiteWorks() {
                     <VideoPlayer src="/videos/SmartSheltersSiteWorks.mp4" type="video/mp4"/>
                     <div className="md:col-span-2 flex justify-center">
                         <div className="w-full md:max-w-2xl">
-                            <VideoPlayer src='/videos/motorGradingVideo.mp4' type='video/mp4' />
+                            <VideoPlayer src='/videos/motorGradingVideo.mp4' type='video/mp4'/>
                         </div>
                     </div>
                 </div>

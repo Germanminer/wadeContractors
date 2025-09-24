@@ -6,6 +6,8 @@ import YoutubeEmbed from "../../components/YoutubeEmbed.tsx";
 export default function LaserGraderHireage() {
     return (
         <>
+            <meta name="description"
+                  content="Laser Grader Hireage · Family Business. Welcome to Wade Contractors."/>
             <Navbar/>
             <ContactForm/>
             <div className="mx-auto flex max-w-7xl flex-col items-center p-6 text-center space-y-6">

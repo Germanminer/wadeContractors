@@ -6,6 +6,8 @@ import VideoPlayer from "../../components/VideoPlayer";
 export default function EffluentSpreading() {
     return (
         <>
+            <meta name="description"
+                  content="Effluent Spreading · Family Business. Welcome to Wade Contractors."/>
             <Navbar/>
             <ContactForm/>
             <div className='mx-auto max-w-7xl px-6 py-12 space-y-2'>
@@ -18,7 +20,7 @@ export default function EffluentSpreading() {
                     THE SOIL IF SPREAD ON PADDOCKS EFFICIENTLY.
                     WE WILL WORK WITH YOU TO DEVELOP A PLAN THAT SUITS YOUR CONDITIONS.
                 </p>
-                <VideoPlayer src='/videos/EffluentSpreadersWorkingTwo.mp4' type='video/mp4' />
+                <VideoPlayer src='/videos/EffluentSpreadersWorkingTwo.mp4' type='video/mp4'/>
             </div>
             <Footer/>
         </>
