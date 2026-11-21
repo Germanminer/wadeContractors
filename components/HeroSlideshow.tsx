@@ -50,17 +50,6 @@ export default function HeroSlideshow() {
                                 fetchPriority={i===0?'high':'auto'}
                                 loading={i===0? 'eager':'lazy'}
                             />
-
-                            {/* Text overlay */}
-                            <div
-                                key={isActive ? `text-${i}-${index}` : `text-${i}`}
-                                className={`slide-text absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 ${
-                                    showText && isActive ? "fade-in-up" : "fade-out-down"
-                                }`}
-                            >
-                                {slide.title && <h2 className="mb-2 text-4xl font-bold text-shadow-lg md:text-6xl">{slide.title}</h2>}
-                                {slide.text && <p className="text-lg">{slide.text}</p>}
-                            </div>
                         </div>
                     );
                 })}

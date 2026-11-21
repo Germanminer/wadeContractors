@@ -1,4 +1,5 @@
 import VideoPlayer from '../../components/VideoPlayer';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'About Us | Wade Contractors',
@@ -13,7 +14,7 @@ export default function About() {
                 <h1 className="mb-5 text-2xl font-bold text-gray-800">About us</h1>
                 <h2 className="mb-5 text-xl font-bold text-gray-800">Meet the Team</h2>
                 <div className='overflow-hidden'>
-                    <img className="mx-auto scale-150" src="/team.jpg" alt="Photo of the wade contracting team" width="800" height="600"/>
+                    <Image className="mx-auto scale-150" src="/team.jpg" alt="Photo of the wade contracting team" width={800} height={600} loading="eager"/>
                 </div>
                 <div className="mb-5 text-center text-gray-800">
                     <p className='mb-5 text-sm font-semibold'>From left to right: Klinton, Gary, Robyn & Kevin Wade with

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from "react";
+import Image from 'next/image';
 
 interface YoutubeEmbedProps {
     videoId: string;
@@ -22,10 +23,13 @@ export default function YoutubeEmbed({ videoId, isShort = false }: YoutubeEmbedP
                     onClick={() => setIsLoaded(true)}
                     aria-label={`Play video ${videoId}`}
                 >
-                    <img
+                    <Image
                         src={thumbnail}
                         alt={`Video ${videoId} thumbnail`}
                         className="w-full h-full object-cover group-hover:brightness-90 transition"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="bg-black/60 p-4 rounded-full group-hover:bg-red-600 transition">

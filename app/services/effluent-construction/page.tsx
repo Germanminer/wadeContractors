@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Effluent Pond Construction | Wade Contractors',
   description: 'Effluent Pond Construction · Wade Contractors - Earthmoving, effluent management, laser drainage Waikato farm contractors.',
@@ -47,12 +49,13 @@ export default function EffluentPondConstruction() {
                     {images.map(function (image, index) {
                         return (
                             <div className="flex flex-col items-center text-center" key={index}>
-                                <img
+                                <Image
                                     src={image.src}
                                     alt={image.alt}
                                     className="w-full rounded-lg object-cover shadow-lg h-120"
-                                    width="600"
-                                    height="400"
+                                    width={600}
+                                    height={400}
+                                    loading="lazy"
                                 />
                             </div>
                         )
