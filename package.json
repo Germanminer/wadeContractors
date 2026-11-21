@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "next": "^15.1.0",
+    "next": "^15.5.29",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-facebook": "^10.0.1",
@@ -26,7 +26,7 @@
     "eslint": "^9.33.0",
     "eslint-config-next": "^15.1.0",
     "globals": "^16.3.0",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.33",
     "tailwindcss": "^4.1.13",
     "typescript": "~5.8.3"
   }
