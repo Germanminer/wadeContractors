@@ -6,7 +6,7 @@ export default function Socials() {
                 <h2 className="mb-3 flex items-center justify-center gap-2 font-semibold text-gray-800 text-md md:justify-end md:text-xl">
                     Check out our latest updates
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" fill="none"
-                         viewBox="0 0 24 24" stroke="currentColor">
+                         viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </h2>
@@ -14,7 +14,7 @@ export default function Socials() {
                     <a href="https://www.facebook.com/WadeContractors/" target="_blank" aria-label="Facebook"
                        className="group flex h-10 md:h-15 w-10 md:w-15 items-center justify-center rounded-full bg-base text-[#1877F2] transition hover:bg-[#1877F2] hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"
-                             className="h-7 w-7 md:h-12 md:w-12">
+                             className="h-7 w-7 md:h-12 md:w-12" aria-hidden="true">
                             <path
                                 d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"/>
                         </svg>
@@ -22,7 +22,7 @@ export default function Socials() {
                     <a href="https://www.instagram.com/wade_contractors_/" target="_blank" aria-label="Instagram"
                        className="group flex h-10 md:h-15 w-10 md:w-15 items-center justify-center rounded-full bg-base text-[#DD2A7B] transition hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             className="h-7 w-7 md:h-12 md:w-12">
+                             className="h-7 w-7 md:h-12 md:w-12" aria-hidden="true">
                             <path fillRule="evenodd" clipRule="evenodd"
                                   d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
                             ></path>
@@ -37,7 +37,7 @@ export default function Socials() {
                     <a href="https://www.youtube.com/@klintonwade4523" target="_blank" aria-label="YouTube"
                        className="group flex h-10 md:h-15 w-10 md:w-15 items-center justify-center rounded-full bg-base text-[#FF0000] transition hover:bg-[#FF0000] hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -7 48 48"
-                             className="h-7 w-7 md:h-12 md:w-12">
+                             className="h-7 w-7 md:h-12 md:w-12" aria-hidden="true">
                             <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                 <g transform="translate(-200.000000, -368.000000)" fill="currentColor">
                                     <path

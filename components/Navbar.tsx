@@ -8,13 +8,13 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 z-50 w-full transition-all duration-300 bg-base">
+            <nav className="fixed top-0 left-0 z-50 w-full bg-base" style={{transitionProperty: 'background-color, box-shadow', transitionDuration: '300ms'}}>
                 <div className="mx-auto px-4 max-w-7xl sm:px-6 lg:px-8">
                     <div className="flex h-16 items-center justify-between">
 
                         {/* Logo */}
                         <Link href="/" className="flex-shrink-0">
-                            <img className="h-16 w-auto" src="/darkLogo.png" alt="Wade contractors" />
+                            <img className="h-16 w-auto" src="/darkLogo.png" alt="Wade contractors" width="64" height="64" />
                         </Link>
 
                         {/* Desktop menu links */}
@@ -42,7 +42,8 @@ export default function Navbar() {
                         <div className="flex lg:hidden">
                             <button
                                 title='Mobile menu button'
-                                className="z-50 cursor-pointer text-white focus:outline-none"
+                                aria-label="Open mobile menu"
+                                className="z-50 cursor-pointer text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
                                 onClick={() => setMobileOpen(true)}
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
@@ -58,18 +59,22 @@ export default function Navbar() {
 
 
                 {/* Mobile overlay */}
-                <div
-                    className={`fixed inset-0 bg-black/50 transition-opacity duration-300 z-40 ${mobileOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+                <button
+                    type="button"
+                    aria-label="Close mobile menu"
+                    className={`fixed inset-0 z-40 ${mobileOpen ? "bg-black/50 opacity-100" : "opacity-0 pointer-events-none"}`}
                     onClick={() => setMobileOpen(false)}
-                ></div>
+                />
 
                 {/* Mobile menu panel */}
                 <div
-                    className={`fixed top-0 right-0 h-full w-64 bg-base transform transition-transform duration-300 lg:hidden z-50 ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}
+                    className={`fixed top-0 right-0 h-full w-64 bg-base transform transition-transform duration-300 lg:hidden z-50 overscroll-contain ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}
+                    style={{overscrollBehavior: 'contain'}}
                 >
                     <div className="flex justify-end p-4">
                         <button
-                            className="cursor-pointer text-white"
+                            aria-label="Close mobile menu"
+                            className="cursor-pointer text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
                             onClick={() => setMobileOpen(false)}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"

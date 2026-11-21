@@ -10,9 +10,10 @@ export default function About() {
     return (
         <>
             <div className="mx-auto mb-15 max-w-6xl items-center justify-center p-4">
+                <h1 className="mb-5 text-2xl font-bold text-gray-800">About us</h1>
                 <h2 className="mb-5 text-xl font-bold text-gray-800">Meet the Team</h2>
                 <div className='overflow-hidden'>
-                    <img className="mx-auto scale-150" src="/team.jpg" alt="Photo of the wade contracting team"/>
+                    <img className="mx-auto scale-150" src="/team.jpg" alt="Photo of the wade contracting team" width="800" height="600"/>
                 </div>
                 <div className="mb-5 text-center text-gray-800">
                     <p className='mb-5 text-sm font-semibold'>From left to right: Klinton, Gary, Robyn & Kevin Wade with
@@ -28,7 +29,6 @@ export default function About() {
                 </div>
                 <div className="my-6 border-t border-gray-300"></div>
                 <div>
-                    <h1 className='text-2xl font-semibold text-gray-800'>About us</h1>
                     <div className="mx-auto text-lg leading-relaxed text-gray-800 space-y-4 md:text-sm">
                         <p>
                             The Wade family are dairy farmers as well as being agricultural contractors and it's this

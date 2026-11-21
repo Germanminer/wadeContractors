@@ -15,12 +15,14 @@ export default function HeroSlideshow() {
     const [index, setIndex] = useState(0);
     const [showText] = useState(true);
     useEffect(() => {
+        const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (mediaQuery.matches) return;
+        
         const timer = setInterval(() => {
             setIndex((prev) => (prev + 1) % slides.length);
         }, 2500);
         return () => clearInterval(timer);
-
-    }, [index]);
+    }, []);
 
     return (
         <div className="relative w-full overflow-hidden md:h-[500px] xl:h-[700px]">
@@ -43,6 +45,8 @@ export default function HeroSlideshow() {
                                 src={slide.src}
                                 alt={slide.title}
                                 className="h-full w-full object-cover"
+                                width="1920"
+                                height="1080"
                                 fetchPriority={i===0?'high':'auto'}
                                 loading={i===0? 'eager':'lazy'}
                             />
@@ -54,8 +58,8 @@ export default function HeroSlideshow() {
                                     showText && isActive ? "fade-in-up" : "fade-out-down"
                                 }`}
                             >
-                                <h2 className="mb-2 text-4xl font-bold text-shadow-lg md:text-6xl">{""}</h2>
-                                <p className="text-lg">{slide.text}</p>
+                                {slide.title && <h2 className="mb-2 text-4xl font-bold text-shadow-lg md:text-6xl">{slide.title}</h2>}
+                                {slide.text && <p className="text-lg">{slide.text}</p>}
                             </div>
                         </div>
                     );

@@ -20,10 +20,11 @@ export default function YoutubeEmbed({ videoId, isShort = false }: YoutubeEmbedP
                 <button
                     className="w-full h-full relative group"
                     onClick={() => setIsLoaded(true)}
+                    aria-label={`Play video ${videoId}`}
                 >
                     <img
                         src={thumbnail}
-                        alt="YouTube video thumbnail"
+                        alt={`Video ${videoId} thumbnail`}
                         className="w-full h-full object-cover group-hover:brightness-90 transition"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -43,7 +44,7 @@ export default function YoutubeEmbed({ videoId, isShort = false }: YoutubeEmbedP
                 <iframe
                     className="w-full h-full border-0"
                     src={`https://www.youtube.com/embed/${videoId}?autoplay=0&modestbranding=1&rel=0&playsinline=1`}
-                    title="YouTube video player"
+                    title={`YouTube video player: ${videoId}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 />

@@ -51,6 +51,8 @@ export default function EffluentPondConstruction() {
                                     src={image.src}
                                     alt={image.alt}
                                     className="w-full rounded-lg object-cover shadow-lg h-120"
+                                    width="600"
+                                    height="400"
                                 />
                             </div>
                         )

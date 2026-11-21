@@ -41,7 +41,7 @@ const slideShowImages = [
     "/drainagePics/photo-1_orig.jpg",
     "/drainagePics/photo-2_orig.jpg",
     "/drainagePics/sidedigger_orig.jpg",
-    "drainagePics/img-8149_orig.jpg"
+    "/drainagePics/img-8149_orig.jpg"
 ]
 
 export default function Home() {
@@ -59,7 +59,7 @@ export default function Home() {
                         exceptional service. Browse our site for services, photos, and videos — and don't hesitate to
                         get in touch!
                     </p>
-                    <Link href="about" className='text-sm'>Read more...</Link>
+                    <Link href="about" className='text-sm'>Read more…</Link>
                 </div>
                 <div className="ml-6">
                     <Socials/>
@@ -74,13 +74,11 @@ export default function Home() {
             </div>
             <div className="mx-auto max-w-4xl p-4">
                 <div className="mb-4 text-center">
+                    <h3 className="mb-2 text-2xl font-semibold">
+                        Wade Contractors in Action
+                    </h3>
                     <Link href="/services">
-                        <h3 className="mb-2 text-2xl font-semibold">
-                            Wade Contractors in Action
-                        </h3>
-                        <h3 className="text-xl">
-                            Visit our services for more information
-                        </h3>
+                        <h3 className="text-xl">Visit our services for more information</h3>
                     </Link>
                 </div>
                 <div className='md:flex'>

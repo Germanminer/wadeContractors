@@ -40,54 +40,58 @@ function ContactEmailSetup() {
         <>
             <form className="flex-1 space-y-4" ref={formRef} onSubmit={sendEmail}>
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="contact-form-name-input" className="block text-sm font-medium text-gray-700">
                         Name
-                        <input
-                            id="contact-form-name-input"
-                            type="text"
-                            className="mt-1 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-blue-500"
-                            placeholder="Your Name"
-                            maxLength={50}
-                            name="name"
-                        />
                     </label>
+                    <input
+                        id="contact-form-name-input"
+                        type="text"
+                        className="mt-1 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500"
+                        placeholder="Your Name"
+                        maxLength={50}
+                        name="name"
+                    />
                 </div>
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="contact-form-email-or-phone-input" className="block text-sm font-medium text-gray-700">
                         Phone / Email
-                        <input
-                            id="contact-form-email-or-phone-input"
-                            type="text"
-                            className="mt-1 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-blue-500"
-                            placeholder="Your Contact*"
-                            required
-                            maxLength={50}
-                            name="contact"
-                        />
                     </label>
+                    <input
+                        id="contact-form-email-or-phone-input"
+                        type="text"
+                        inputMode="text"
+                        className="mt-1 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500"
+                        placeholder="Your Contact*"
+                        required
+                        maxLength={50}
+                        name="contact"
+                    />
                 </div>
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="contact-form-info-input" className="block text-sm font-medium text-gray-700">
                         How can we help?
-                        <textarea
-                            id="contact-form-info-input"
-                            className="mt-1 w-full rounded-md border border-gray-300 p-2 h-30 focus:border-blue-500 focus:ring-blue-500"
-                            placeholder="Services, Hires..."
-                            maxLength={500}
-                            name="message"
-                        />
                     </label>
+                    <textarea
+                        id="contact-form-info-input"
+                        className="mt-1 w-full rounded-md border border-gray-300 p-2 h-30 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500"
+                        placeholder="Services, Hires..."
+                        maxLength={500}
+                        name="message"
+                    />
                 </div>
                 <button
                     id="contact-form-submit"
                     type="submit"
-                    className="w-full rounded-md bg-blue-600 py-2 text-white transition hover:bg-blue-700"
+                    disabled={loading}
+                    className="w-full rounded-md bg-blue-600 py-2 text-white transition hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                 >
-                    Submit
+                    {loading ? 'Sending...' : 'Submit'}
                 </button>
             </form>
             {outputText && (
                 <p
+                    role="status"
+                    aria-live="polite"
                     className={`my-4 w-full text-center text-lg font-semibold rounded-lg border-2 shadow-md py-3 px-4
         ${loading
                         ? "text-orange-700 bg-orange-200 border-orange-400"

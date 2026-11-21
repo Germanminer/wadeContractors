@@ -7,7 +7,9 @@ export default function Service({src, text, link}: {src: string; text: string; l
                   className="block overflow-hidden rounded-lg shadow transition group hover:shadow-lg">
                 <div className="w-full overflow-hidden bg-gray-200 aspect-[16/9]">
                     <img src={src} alt={text}
-                         className="h-full w-full object-cover"/>
+                         className="h-full w-full object-cover"
+                         width="640"
+                         height="360"/>
                 </div>
                 <div className="bg-white p-4">
                     <h2 className="text-lg font-semibold text-gray-800 transition group-hover:text-blue-600">

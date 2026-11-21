@@ -52,6 +52,14 @@
 .fade-out-down{
   animation:fade-out-down 0.7s ease forwards
 }
+@media (prefers-reduced-motion: reduce) {
+  .zoom-slow,
+  .fade-in-up,
+  .fade-out-down,
+  .textImpact {
+    animation: none !important;
+  }
+}
 .scrolled {
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
