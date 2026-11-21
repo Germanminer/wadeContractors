@@ -2,38 +2,32 @@
   "name": "wade-contractors",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "@tailwindcss/vite": "^4.1.13",
+    "next": "^15.1.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-facebook": "^10.0.1",
-    "react-router-dom": "^7.8.2",
     "video.js": "^8.23.4"
   },
   "devDependencies": {
-    "@eslint/js": "^9.33.0",
+    "@tailwindcss/postcss": "^4.1.13",
     "@types/node": "^24.5.1",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "@types/video.js": "^7.3.58",
-    "@vitejs/plugin-react": "^5.0.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.33.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-config-next": "^15.1.0",
     "globals": "^16.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.39.1",
-    "vite": "^7.1.2"
+    "typescript": "~5.8.3"
   }
 }
