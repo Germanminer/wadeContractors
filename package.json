@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "next": "^15.5.29",
+    "next": "16.4.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-facebook": "^10.0.1",
