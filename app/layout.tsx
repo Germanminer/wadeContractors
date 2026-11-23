@@ -1,7 +1,7 @@
 import './globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import ContactForm from '../components/ContactForm';
+import ContactFormInjector from '../components/ContactFormInjector';
 
 export const metadata = {
   title: 'Wade Contractors | Earthmoving, Site Works & Drainage in Te Aroha',
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col">
+      <body className="flex min-h-screen flex-col" suppressHydrationWarning>
         <Navbar />
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">
           Skip to main content
@@ -24,7 +24,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <ContactForm />
+        <ContactFormInjector />
       </body>
     </html>
   );

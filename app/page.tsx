@@ -9,7 +9,6 @@ import FacebookPageEmbed from '../components/FacebookPageEmbed';
 export const metadata = {
   title: 'Home | Wade Contractors',
   description: 'Providing agricultural contracting services in Waikato for over 30 years.',
-  keywords: 'Dairy Effluent, effluent spreading, excavation, earthmoving, site works, effluent pond liner, pond construction, effluent, sand and metal cartage, transport, agricultural contractor, grader, long reach digger, goat farming, New Zealand goat farming, grader hire Waikato, race repair, track repair, goat shed construction, dairy effluent, truck hire, cartage, tractor hire, muckspreader hire, laser drainage consultancy, laser drainage, dry hire agricultural equipment, Wades, Kevin Wade, Wade Contractors, Wade Farms, earthworks Waikato, Klinton Wade, Farm Races, agricultural contracting, sub soil drainage, novaflow laying, novaflow drainage, dairy effluent, goat, cow, excavation, earthmover',
   openGraph: {
     url: 'https://www.wadecontractors.co.nz/',
     siteName: 'Wade Contractors - Earthmoving, effluent management, laser drainage Waikato farm contractors',
@@ -77,8 +76,8 @@ export default function Home() {
                     <h3 className="mb-2 text-2xl font-semibold">
                         Wade Contractors in Action
                     </h3>
-                    <Link href="/services">
-                        <h3 className="text-xl">Visit our services for more information</h3>
+                    <Link href="/services" className="text-xl">
+                        Visit our services for more information
                     </Link>
                 </div>
                 <div className='md:flex'>

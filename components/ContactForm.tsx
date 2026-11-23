@@ -1,10 +1,62 @@
 'use client';
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ContactEmailSetup from "./ContactEmailSetup";
 
 export default function ContactForm() {
     const [open, setOpen] = useState(false);
+    const panelRef = useRef<HTMLDivElement>(null);
+    const lastFocusedRef = useRef<HTMLElement | null>(null);
+
+    useEffect(() => {
+        if (!open) return;
+
+        lastFocusedRef.current = document.activeElement as HTMLElement;
+
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') {
+                setOpen(false);
+                return;
+            }
+
+            if (e.key === 'Tab') {
+                const panel = panelRef.current;
+                if (!panel) return;
+
+                const focusable = panel.querySelectorAll<HTMLButtonElement | HTMLInputElement | HTMLTextAreaElement>(
+                    'button, input, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                const first = focusable[0];
+                const last = focusable[focusable.length - 1];
+
+                if (e.shiftKey) {
+                    if (document.activeElement === first) {
+                        e.preventDefault();
+                        last?.focus();
+                    }
+                } else {
+                    if (document.activeElement === last) {
+                        e.preventDefault();
+                        first?.focus();
+                    }
+                }
+            }
+        };
+
+        document.addEventListener('keydown', handleKeyDown);
+        document.body.style.overflow = 'hidden';
+
+        requestAnimationFrame(() => {
+            const closeBtn = panelRef.current?.querySelector('button[aria-label="Close contact form"]') as HTMLElement | null;
+            closeBtn?.focus();
+        });
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+            document.body.style.overflow = '';
+            lastFocusedRef.current?.focus();
+        };
+    }, [open]);
 
     return (
         <>
@@ -25,6 +77,8 @@ export default function ContactForm() {
             >
                 {/* Slide-in Panel */}
                 <div
+                    ref={panelRef}
+                    onClick={(e) => e.stopPropagation()}
                     className={`w-96 bg-white h-full p-6 shadow-lg flex flex-col transform transition-transform duration-300 ease-in-out overscroll-contain ${
                         open ? "translate-x-0" : "translate-x-full"
                     }`}
@@ -38,7 +92,7 @@ export default function ContactForm() {
                             aria-label="Close contact form"
                             className="text-2xl leading-none text-gray-500 hover:text-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                         >
-                            &times;
+                            \u00D7
                         </button>
                     </div>
 

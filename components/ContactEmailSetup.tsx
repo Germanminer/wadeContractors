@@ -23,13 +23,13 @@ function ContactEmailSetup() {
                     setOutputText("Message sent successfully!");
                     setLoading(false);
                     setFailed(false);
+                    formRef.current?.reset();
                 })
                 .catch(() => {
                     setOutputText("Oops! Something went wrong! Please try again!");
                     setLoading(false);
                     setFailed(true);
                 });
-            formRef.current?.reset();
         } else {
             setOutputText("Form is not ready!");
             setLoading(false);
@@ -46,7 +46,7 @@ function ContactEmailSetup() {
                     <input
                         id="contact-form-name-input"
                         type="text"
-                        className="mt-1 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500"
+                        className="mt-1 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500"
                         placeholder="Your Name"
                         maxLength={50}
                         name="name"
@@ -60,7 +60,7 @@ function ContactEmailSetup() {
                         id="contact-form-email-or-phone-input"
                         type="text"
                         inputMode="text"
-                        className="mt-1 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500"
+                        className="mt-1 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500"
                         placeholder="Your Contact*"
                         required
                         maxLength={50}
@@ -73,7 +73,7 @@ function ContactEmailSetup() {
                     </label>
                     <textarea
                         id="contact-form-info-input"
-                        className="mt-1 w-full rounded-md border border-gray-300 p-2 h-30 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500"
+                        className="mt-1 w-full rounded-md border border-gray-300 p-2 h-32 focus:border-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500"
                         placeholder="Services, Hires..."
                         maxLength={500}
                         name="message"

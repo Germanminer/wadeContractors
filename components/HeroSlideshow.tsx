@@ -1,6 +1,6 @@
 'use client';
 
-import {useEffect,useState} from "react";
+import { useEffect, useState } from "react";
 
 const slides = [
     {src:"/team.jpg",title: "Family Business",text:""},
@@ -13,7 +13,6 @@ const slides = [
 
 export default function HeroSlideshow() {
     const [index, setIndex] = useState(0);
-    const [showText] = useState(true);
     useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
         if (mediaQuery.matches) return;
@@ -26,7 +25,6 @@ export default function HeroSlideshow() {
 
     return (
         <div className="relative w-full overflow-hidden md:h-[500px] xl:h-[700px]">
-            <link rel="preload" href="/team.jpg" as='image'/>
             <div className="relative w-full pt-[56.25%] md:h-full md:pt-0">
                 {slides.map((slide, i) => {
                     const isActive = i === index;
