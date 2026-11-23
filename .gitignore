@@ -26,3 +26,5 @@ scripts
 *.sw?
 .next
 .junie
+
+/out/

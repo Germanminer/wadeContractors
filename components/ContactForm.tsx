@@ -92,7 +92,7 @@ export default function ContactForm() {
                             aria-label="Close contact form"
                             className="text-2xl leading-none text-gray-500 hover:text-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                         >
-                            \u00D7
+                            x
                         </button>
                     </div>
 

@@ -34,9 +34,13 @@ export default function Footer() {
 
                 {/* separator line */}
                 <div className="mt-6 border-t border-gray-700"></div>
-                <div className="mx-auto flex max-w-7xl justify-center gap-4 px-6 py-4 text-gray-400">
+                <div className="mx-auto flex max-w-7xl justify-start gap-4 px-6 py-4 text-gray-400 md:justify-center">
                     <p className="mt-2 text-sm text-white">
-                        &copy; {year} Wade Contractors. All rights reserved. | Site by <a href="https://pascalburri.co.nz">Pascal Burri</a>
+                        &copy; {year} Wade Contractors.
+                        <br className="md:hidden " />
+                        <span className="hidden md:inline"> </span>
+                         All rights reserved.
+                        <span className="hidden md:inline"> |</span> Site by <a href="https://pascalburri.co.nz">Pascal Burri</a>
                     </p>
                 </div>
             </footer>
